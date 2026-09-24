@@ -1,0 +1,115 @@
+{
+ "schema_version": "protedit-mrt-v1",
+ "profile_schema_version": "protedit-sequence-changing-v1",
+ "task_id": "ptask-ae9c89872b9a12229b3f",
+ "action": "head_to_tail_cyclization",
+ "instruction": {
+  "en": "Cyclize the red N/C-terminal edit core with one declared head-to-tail amide bond; substitutions only in the core.",
+  "zh": "让红色 N/C 端编辑核心形成头尾环化；只允许核心内等长替换和声明的唯一新酰胺键。"
+ },
+ "source": {
+  "source_content_id": "psource-644b1639cb4b6b820f07",
+  "structure_file": "/datashare/suencheng/protein_edit_dataset/data/derived/benchmark/protedit_v0_5_2_variable_sequence_calibrated_20260906/model_eval/canonical_sources_20260907_fixed/psource-644b1639cb4b6b820f07/structure.cif",
+  "residue_table_file": "/datashare/suencheng/handoff-clusterx-20260812/protein_edit/llm_bench/cards_root_core_redesign_v1_20260916_source_isolated_full/residue_tables/ptask-ae9c89872b9a12229b3f.json",
+  "coordinate_namespace": "canonical",
+  "chain_composition": [
+   {
+    "chain_id": "A",
+    "length": 14,
+    "label_seq_span": "1-14",
+    "sequence": "RVRTRGKRRIRVPP"
+   }
+  ],
+  "release_structure_file": "/datashare/suencheng/protein_edit_dataset/data/derived/benchmark/protedit_v0_5_2_variable_sequence_calibrated_20260906/release/protedit_v0_5_2_variable_sequence_calibrated_20260906/public/sources/psource-644b1639cb4b6b820f07/structure.pdb",
+  "release_residue_table_file": "/datashare/suencheng/protein_edit_dataset/data/derived/benchmark/protedit_v0_5_2_variable_sequence_calibrated_20260906/release/protedit_v0_5_2_variable_sequence_calibrated_20260906/public/sources/psource-644b1639cb4b6b820f07/residues.json",
+  "canonicalization_file": "/datashare/suencheng/protein_edit_dataset/data/derived/benchmark/protedit_v0_5_2_variable_sequence_calibrated_20260906/model_eval/canonical_sources_20260907_fixed/psource-644b1639cb4b6b820f07/canonicalization.json"
+ },
+ "roles": {
+  "edit_core": {
+   "A": {
+    "label_seq_ranges": "1-4,11-14",
+    "auth_seq_ranges": "1-4,11-14",
+    "canonical_indices": [
+     0,
+     1,
+     2,
+     3,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  },
+  "relax_shell": {
+   "A": {
+    "label_seq_ranges": "5-10",
+    "auth_seq_ranges": "5-10",
+    "canonical_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  },
+  "hard_protected": null,
+  "fixed_context": null,
+  "reference_patch": null
+ },
+ "sequence_policy": {
+  "profile": "core_redesign_v1",
+  "mode": "core_redesign",
+  "editable_regions": [
+   "edit_core"
+  ],
+  "protected_regions": [
+   "relax_shell",
+   "reference_patch",
+   "fixed_context",
+   "hard_protected"
+  ],
+  "max_substitution_fraction": null,
+  "preserve_length": true,
+  "preserve_chain_ids": true,
+  "preserve_residue_order": true,
+  "preserve_atom_mapping": true,
+  "forbid_noncanonical": true
+ },
+ "target_criteria": {
+  "primary_metric_id": "head_to_tail_bond_validity_v2",
+  "target": {
+   "closed_witness_required": true,
+   "endpoint_source_range_angstrom": [
+    2.0,
+    4.0
+   ],
+   "metric_id": "head_to_tail_bond_validity_v2"
+  },
+  "shape_constraints": null,
+  "topology": {
+   "adapter_assisted": true,
+   "allowed_new_bonds": [
+    "A:14:C-A:1:N"
+   ],
+   "bond_type": "amide",
+   "distance_range_angstrom": [
+    1.2,
+    1.5
+   ],
+   "exact_new_bond_count": 1,
+   "policy": "one_new_head_to_tail_amide_bond",
+   "route": "adapter_assisted_fixed_sequence",
+   "route_alias": "adapter_assisted"
+  },
+  "reference_constraints": null
+ },
+ "reference_material": {
+  "closed_witness_pdb": "/datashare/suencheng/protein_edit_dataset/data/derived/benchmark/protedit_v0_5_2_variable_sequence_calibrated_20260906/release/protedit_v0_5_2_variable_sequence_calibrated_20260906/public/samples/psample-9d89845499d1140017ee/reference/closed_witness.pdb"
+ },
+ "split": "test",
+ "benchmark_split": "test",
+ "source_content_group_id": "isolation-03b360e706abd41466fe"
+}

@@ -1,0 +1,48 @@
+{
+  "_comment": "ZCode 作为编译模型，按开放模板（bcc_open/bcc_boltzgen.md）为 10 个试点任务手写的 spec。s1=主样本（每任务1份），s2=第二样本（3个任务，展示同一'模型'的决策方差）。决策依据见各 spec 的 note（note 不入 spec，仅留档）。",
+  "specs": {
+    "ptask-063cee2dad90758b9ba6": {
+      "s1": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}, {"chain": {"id": "B"}}], "design": [{"chain": {"id": "B", "res_index": "67..69"}}, {"chain": {"id": "B", "res_index": "72..74"}}]}}]},
+      "s2": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}, {"chain": {"id": "B"}}], "design": [{"chain": {"id": "B", "res_index": "68..73"}}]}}]},
+      "note": "move_away, core B:67-74(8res)。s1 铰链拆分：67-69 与 72-74 设计、70-71 保留为内部锚点，让两段可独立外摆（中位数距离对 8 残基取 4/5 位，两段同移即可过半）；s2 保守收缩到 68-73（两端各留 1 残基护边界）。t0=整窗转写。"
+    },
+    "ptask-0d40e6bf0227c26211e5": {
+      "s1": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}, {"chain": {"id": "B"}}], "design": [{"chain": {"id": "B", "res_index": "12..17"}}, {"chain": {"id": "B", "res_index": "21..26"}}]}}]},
+      "s2": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}, {"chain": {"id": "B"}}], "design": [{"chain": {"id": "B", "res_index": "12..23"}}]}}]},
+      "note": "move_away, core B:12-26(15res)。s1 铰链拆分留 18-20 中段锚；s2 部分收缩 12-23。"
+    },
+    "ptask-0ed96aa051d7bdb35c9b": {
+      "s1": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}, {"chain": {"id": "B"}}], "design": [{"chain": {"id": "B", "res_index": "36..47"}}]}}]},
+      "note": "move_away, core B:35-48(14res)。边界收缩 1 残基：核心两端紧邻 relax_shell，少设计边界残基可降低 G3 protected 漂移风险，12 个自由残基仍足以移动中位数。t0=35-48 整窗。"
+    },
+    "ptask-110403358439cfa21953": {
+      "s1": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}, {"chain": {"id": "B"}}], "design": [{"chain": {"id": "B", "res_index": "71..76"}}, {"chain": {"id": "B", "res_index": "79..83"}}]}}]},
+      "note": "move_away, core B:71-83(13res)。铰链拆分留 77-78 锚，13 残基取中位需≥7 移动，两段共 11 个自由残基。"
+    },
+    "ptask-0025807cbef25b141e0c": {
+      "s1": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}, {"chain": {"id": "B"}}], "design": [{"chain": {"id": "B", "res_index": "6..18"}}]}}]},
+      "note": "move_closer, core B:6-18。需要靠近：bg 扩散本来就有被参考面吸引的倾向（这正是 move_away 失败的原因，对 move_closer 反而有利），整窗设计给生成器最大自由度即可，不加约束。与 t0 同窗但这是权衡后的主动选择。"
+    },
+    "ptask-01830134319100611f22": {
+      "s1": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}, {"chain": {"id": "B"}}], "design": [{"chain": {"id": "B", "res_index": "36..47"}}]}}]},
+      "note": "move_closer, core B:35-48。同源结构（与 0ed9 同蛋白同核心），边界收缩 1 残基护 G3。"
+    },
+    "ptask-045b4ac35e1e5935cc3c": {
+      "s1": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}], "design": [{"chain": {"id": "A", "res_index": "78..102"}}, {"chain": {"id": "A", "res_index": "130..154"}}]}}]},
+      "s2": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}], "design": [{"chain": {"id": "A", "res_index": "78..154"}}], "residue_constraints": [{"position": "78", "allowed": "P"}, {"position": "154", "allowed": "P"}]}}]},
+      "note": "shape_control, core A:78-154(77res)，目标=asphericity 降 25% 且 Rg 比降到 0.70-0.95（收紧）。s1 端部拆分：只重设计两端 25+25 残基、保留中段 103-129，让两端向内卷曲实现整体收紧；s2 整窗+两端 Pro 钉死（刚化端帽促中段压缩）。t0=整窗无约束（bg 该族 0% 通过）。单链任务 position 无歧义。"
+    },
+    "ptask-01425f04371dd0c784f5": {
+      "s1": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}], "design": [{"chain": {"id": "A", "res_index": "61..96"}}]}}]},
+      "note": "reference_fragment_mimic, core A:49-96，参考片段 A:1-3（N 端，在 fixed_context 内）。t0=49-96 整窗；t1-GPT 选了 N 半 49-73；我选 C 半 61-96：N 端 49-60 靠近参考片段所在的结构语境，保留它作为 mimic 的锚定上下文，重设计 C 半段去贴参考骨架。三个'模型'三种窗口策略——这正是开放模板想要的空间。"
+    },
+    "ptask-03a3f14bdb14df66f05f": {
+      "s1": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}], "design": [{"chain": {"id": "A", "res_index": "267..314"}}]}}]},
+      "note": "alpha_rich 守卫任务（t0 通过）。H-E 平衡目标下整窗重写二级结构是已验证的充分策略，主动选择不变（守卫零退化原则）。"
+    },
+    "ptask-087372c0d2297cee4cc8": {
+      "s1": {"entities": [{"file": {"include": [{"chain": {"id": "A"}}], "design": [{"chain": {"id": "A", "res_index": "145..192"}}]}}]},
+      "note": "beta_rich 守卫任务（t0 通过）。同上，保守选择整窗。"
+    }
+  }
+}

@@ -1,0 +1,163 @@
+# Backend Capability Card
+# Backend Capability Card: BoltzGen (open-decision variant, 2026-09-24)
+
+You will be asked to express a protein-editing task as an input specification
+for **BoltzGen**, a redesign pipeline built on Boltz-2 conditional structure
+generation.  This card documents everything BoltzGen's input can express.
+A companion card of equal detail exists for the other backend; you only see
+this one.
+
+This variant makes explicit that the design decisions below are yours: the
+card fixes the *interface* (format and validity), you fix the *design*.
+
+## Input format (JSON, single object; submit exactly one)
+
+```json
+{
+  "entities": [
+    {
+      "file": {
+        "include": [ {"chain": {"id": "A"}} ],
+        "design":  [ {"chain": {"id": "A", "res_index": "171..250"}} ],
+        "residue_constraints": [ {"position": "171", "allowed": "A"} ]
+      }
+    }
+  ],
+  "constraints": [ {"bond": {"atom1": ["A", 16, "C"], "atom2": ["A", 1, "N"]}} ]
+}
+```
+
+* The source structure path is **filled automatically** from the task card;
+  do not output it.
+* Sampling budget (number of designs, seed) is **fixed by the harness**; do
+  not output sampling parameters.
+
+## `include`
+
+Which source chains to load.  One entry per chain you want present:
+`{"chain": {"id": "A"}}`.  Include every chain the task card's roles mention.
+
+## `design`
+
+Redesignable residue ranges per chain: `"C/start..end"` (inclusive, label
+numbering from the task card's `label_seq_span`).  Multiple ranges for one
+chain are separate entries.  Residues outside `design` keep their identity
+and conformation.
+
+**The design split is the main design lever and it is your decision.**
+The task card's `edit_core` mask defines which residues are *allowed* to
+change; residues outside it must retain their identity (the sequence gate
+enforces this).  Within that constraint you decide freely:
+
+* `design` may cover the whole mask, any subset of it, one or several
+  shorter windows inside it; full coverage is NOT required.
+* A narrower design window keeps more of the source structure intact and
+  makes sequence-gate compliance easier, but may leave the task's target
+  unmet; a wider window gives the generator more freedom.  Weigh the
+  trade-off deliberately against the scoring criteria.
+
+## `residue_constraints` (optional but powerful)
+
+Pin individual positions to allowed amino acids (one-letter codes):
+`{"position": "<label_seq>", "allowed": "A"}`.  `allowed` may also be a
+multi-letter set (e.g. `"AGST"`).  **Whether to pin any position — and which
+— is your decision.**  Positions outside your design region can be locked
+wholesale; locking them makes compliance deterministic, but every constraint
+you add also removes freedom the generator could use to reach the target.
+
+## `constraints` (optional; bonds only)
+
+Explicit inter-atomic bond constraints:
+`{"bond": {"atom1": ["<chain>", <residue>, "<atom>"], "atom2": [...]}}`.
+This is BoltzGen's channel for demanding a covalent geometry, e.g. a
+head-to-tail amide bond between the C-terminal carbon and the N-terminal
+nitrogen.  Atom names are PDB-standard (`N`, `C`, `CA`, ...).  Whether to
+emit any bond constraint is your decision.
+
+## Capability boundary (what BoltzGen cannot express)
+
+* No distance/hotspot conditioning toward arbitrary reference patches: it
+  cannot be told "pay attention to chain B residues 29/111/114" — only
+  which residues to redesign and which bonds to form.
+* No secondary-structure or shape targets: express intent only through the
+  design split, residue constraints and bond constraints.
+
+## Validity rules (your spec is rejected if violated)
+
+1. `include` chain ids exist in the source.
+2. `design` ranges lie within the chain's label_seq span.
+3. `residue_constraints` positions lie within a chain's span and `allowed`
+   contains only the 20 one-letter amino-acid codes.
+4. `constraints` bond atoms reference existing chain/residue; atom names in
+   {N, C, CA, O, CB}.
+5. Only the documented keys.
+
+## ProtEdit `core_redesign_v1` sequence contract (open variant)
+
+`design` ranges must lie **inside** the `edit_core` mask; covering the
+complete mask is NOT required — partial coverage is a legal design choice.
+BoltzGen may substitute any number of canonical residues inside the mask.
+Every residue outside `edit_core` (including `relax_shell`,
+`reference_patch`, `fixed_context` and `hard_protected`) must retain its
+identity; length, chain ids, residue order and backbone atom mapping remain
+fixed.
+
+
+# Scoring Criteria
+# Scoring Criteria Card (ProtEdit core_redesign_v1)
+
+Every candidate structure is graded by three separately reported gates.  A
+task counts as **task_success** only if ALL THREE pass.  The generated score
+row exposes the gates as `valid_output`, `target_pass`,
+`structural_integrity_pass` (legacy `structural_reasonable_pass`), and
+`edit_scope_pass` (legacy `sequence_policy_pass`); the structural and sequence gates are independent
+diagnostics (cyclization's target contract additionally requires topology
+evidence).
+
+## Gate 1 — target (did you achieve the requested edit?)
+
+| action | metric | pass condition |
+|---|---|---|
+| move_closer / move_away | median nearest pseudo-CB distance delta between edit_core and reference_patch | closer: delta <= -0.50 A; away: delta >= +0.50 A (profile default) |
+| alpha_rich | edit_core secondary-structure balance (H fraction - E fraction, backbone phi/psi heuristic) | balance >= 0.35 (profile default) |
+| beta_rich | same balance metric | balance >= 0.10 (profile default) |
+| reference_fragment_mimic | backbone Kabsch RMSD of mapped edit-core residues to the reference fragment | at least 3 mapped residues, RMSD <= 2.00 A AND mapped coverage >= 0.80 (profile defaults) |
+| shape_control | relative asphericity decrease of the edit_core CA point cloud | decrease >= 0.25 AND local Rg ratio in [0.70, 0.95] (profile defaults) |
+| head_to_tail_cyclization | head-to-tail bond validity | exactly 1 new amide bond, measured N-C distance in [1.20, 1.50] A, adapter topology evidence present |
+
+## Gate 2 — structural (is the output structurally sound?)
+
+`structural_reasonable_pass` is the adapter/structural-integrity gate.  It
+requires finite coordinates, the adapter's length/chain-layout check, and a
+passing adapter audit (the harness adapter records observable facts only).
+It is evaluated independently of whether the observed substitutions obey the
+edit policy; that decision belongs to Gate 3.  `adapter_pass` is retained in
+the nested audit object as the diagnostic source for this gate.
+
+## Gate 3 — sequence (did you edit only where allowed?)
+
+Any number of equal-length canonical amino-acid substitutions are allowed **inside the edit_core mask**; all residues outside edit_core must retain identity (including relax_shell, reference_patch, fixed_context, and hard_protected), with the same length/chains/order and backbone atom mapping. This gate is reported as `sequence_policy_pass` (the v1 alias
+is `edit_scope_pass`) and is independent of `structural_reasonable_pass`.
+
+## Practical consequences
+
+* Redesigning MORE residues than the edit_core mask fails Gate 3, even if
+  the geometry is perfect.
+* There is no substitution-fraction cap in `core_redesign_v1`; the edit-scope and identity guards remain hard gates.
+* move tasks need the reference_patch mask (given in the task card) — use
+  whatever backend channel can express attention to it.
+
+`target_progress` is a continuous diagnostic and `target_near_pass` uses a
+threshold locked before model evaluation; neither field changes the strict
+target gate or `strict_task_success`.
+
+The published strict formula is:
+`strict_task_success = structural_integrity_pass AND edit_scope_pass AND target_pass`.
+`valid_output` is reported separately so parse/mapping failures remain
+distinguishable from a valid structure that misses the task target.
+
+
+# Task Card
+{"schema_version": "protedit-mrt-v1", "profile_schema_version": "protedit-sequence-changing-v1", "task_id": "ptask-de2a7a49ad36d654428c", "action": "move_away", "instruction": {"en": "Move the red edit core away from the purple reference; substitutions only inside the edit core.", "zh": "让红色编辑核心远离紫色参考区域；仅允许在红色区域等长替换氨基酸。"}, "source": {"source_content_id": "psource-60bdbef3581c7ce1deb9", "structure_file": "/datashare/suencheng/protein_edit_dataset/data/derived/benchmark/protedit_v0_5_2_variable_sequence_calibrated_20260906/model_eval/canonical_sources_20260907_fixed/psource-60bdbef3581c7ce1deb9/structure.cif", "residue_table_file": "/datashare/suencheng/handoff-clusterx-20260812/protein_edit/llm_bench/cards_root_core_redesign_v1_20260916_source_isolated_full/residue_tables/ptask-de2a7a49ad36d654428c.json", "coordinate_namespace": "canonical", "chain_composition": [{"chain_id": "A", "length": 196, "label_seq_span": "1-196", "sequence": "AIPSNTDYPGPHSFDVSFQQSSTAKSATWTYSTELKKLYCQIAKTCPIQIKVMTPPPQGAVIRAMPVYKKAEHVTEVVKRCPNHELSREFNEGQIAPPSHLIRVEGNSHAQYVEDPITGRQSVLVPYEPPQVGTEFTTVLYNFMCNSSCVGGMNRRPILIIVTLETRDGQVLGRRCFEARICACPGRDRKADEDSI"}, {"chain_id": "B", "length": 157, "label_seq_span": "1-157", "sequence": "DLGKKLLEAAQIGQLDEVRILMANGADVNASDTDGLTPLHLAAASGHLEIVEVLLKTGADVNATDKWGDTPLHLAASQGHLEIVEVLLKAGADVNATDFTGNTPLHLAAYIGHLEIVEVLLKHGADVNAQDKFGKTPFDLAIDNGNEDIAEVLQKAA"}], "release_structure_file": "/datashare/suencheng/protein_edit_dataset/data/derived/benchmark/protedit_v0_5_2_variable_sequence_calibrated_20260906/release/protedit_v0_5_2_variable_sequence_calibrated_20260906/public/sources/psource-60bdbef3581c7ce1deb9/structure.pdb", "release_residue_table_file": "/datashare/suencheng/protein_edit_dataset/data/derived/benchmark/protedit_v0_5_2_variable_sequence_calibrated_20260906/release/protedit_v0_5_2_variable_sequence_calibrated_20260906/public/sources/psource-60bdbef3581c7ce1deb9/residues.json", "canonicalization_file": "/datashare/suencheng/protein_edit_dataset/data/derived/benchmark/protedit_v0_5_2_variable_sequence_calibrated_20260906/model_eval/canonical_sources_20260907_fixed/psource-60bdbef3581c7ce1deb9/canonicalization.json"}, "roles": {"edit_core": {"B": {"label_seq_ranges": "95-107", "auth_seq_ranges": "95-107", "canonical_indices": [290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302]}}, "relax_shell": {"B": {"label_seq_ranges": "87-94,108-115", "auth_seq_ranges": "87-94,108-115", "canonical_indices": [282, 283, 284, 285, 286, 287, 288, 289, 303, 304, 305, 306, 307, 308, 309, 310]}}, "hard_protected": {"B": {"label_seq_ranges": "1-86,116-157", "auth_seq_ranges": "1-86,116-157", "canonical_indices": [196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352]}}, "fixed_context": {"A": {"label_seq_ranges": "1-196", "auth_seq_ranges": "1-196", "canonical_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195]}}, "reference_patch": {"A": {"label_seq_ranges": "186-187,190-191,194-195", "auth_seq_ranges": "186-187,190-191,194-195", "canonical_indices": [185, 186, 189, 190, 193, 194]}}}, "sequence_policy": {"profile": "core_redesign_v1", "mode": "core_redesign", "editable_regions": ["edit_core"], "protected_regions": ["relax_shell", "reference_patch", "fixed_context", "hard_protected"], "max_substitution_fraction": null, "preserve_length": true, "preserve_chain_ids": true, "preserve_residue_order": true, "preserve_atom_mapping": true, "forbid_noncanonical": true}, "target_criteria": {"primary_metric_id": "median_min_pseudo_cb_distance_delta_v2", "target": {"metric_id": "median_min_pseudo_cb_distance_delta_v2", "move_away": {"delta_threshold_angstrom": 0.5}, "move_closer": {"delta_threshold_angstrom": -0.5, "distance_floor_angstrom": 3.5}, "source_distance_angstrom": 8.710487825763307}, "shape_constraints": null, "topology": {"policy": "unchanged"}, "reference_constraints": null}, "split": "test", "benchmark_split": "test", "source_content_group_id": "isolation-1adeebad1ddde0ca3b77"}
+
+Output the JSON input specification now.

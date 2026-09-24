@@ -1,0 +1,1406 @@
+{
+ "n_sources": 136,
+ "n_tasks": 350,
+ "tasks": {
+  "ptask-00201762795ea13b6814": {
+   "psource": "psource-2ca606f269c5689524b9",
+   "cif": "structures/psource-2ca606f269c5689524b9/structure.cif"
+  },
+  "ptask-0025807cbef25b141e0c": {
+   "psource": "psource-24fc26413b1e9b37bbae",
+   "cif": "structures/psource-24fc26413b1e9b37bbae/structure.cif"
+  },
+  "ptask-01425f04371dd0c784f5": {
+   "psource": "psource-a78f5878321653cb9d35",
+   "cif": "structures/psource-a78f5878321653cb9d35/structure.cif"
+  },
+  "ptask-01830134319100611f22": {
+   "psource": "psource-b3851cea167d483eca22",
+   "cif": "structures/psource-b3851cea167d483eca22/structure.cif"
+  },
+  "ptask-03a3f14bdb14df66f05f": {
+   "psource": "psource-979b5e8923453af5b326",
+   "cif": "structures/psource-979b5e8923453af5b326/structure.cif"
+  },
+  "ptask-045b4ac35e1e5935cc3c": {
+   "psource": "psource-ecfaa70916507bf799f5",
+   "cif": "structures/psource-ecfaa70916507bf799f5/structure.cif"
+  },
+  "ptask-046c861772b08827ec63": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-063cee2dad90758b9ba6": {
+   "psource": "psource-f9028e6ed2eda385fe51",
+   "cif": "structures/psource-f9028e6ed2eda385fe51/structure.cif"
+  },
+  "ptask-06a4d539df294b67cf65": {
+   "psource": "psource-699df7e3737cad422329",
+   "cif": "structures/psource-699df7e3737cad422329/structure.cif"
+  },
+  "ptask-084c38928d13211a565d": {
+   "psource": "psource-77b8fee9a1cbe8660172",
+   "cif": "structures/psource-77b8fee9a1cbe8660172/structure.cif"
+  },
+  "ptask-087372c0d2297cee4cc8": {
+   "psource": "psource-409d61350ef805c07548",
+   "cif": "structures/psource-409d61350ef805c07548/structure.cif"
+  },
+  "ptask-08f4cc5828d1150f5161": {
+   "psource": "psource-50e633ed2ce7a0f1023c",
+   "cif": "structures/psource-50e633ed2ce7a0f1023c/structure.cif"
+  },
+  "ptask-0965bea17fd983a42718": {
+   "psource": "psource-b6c524798c26f6d6d5d8",
+   "cif": "structures/psource-b6c524798c26f6d6d5d8/structure.cif"
+  },
+  "ptask-09899427c3d40ba0293d": {
+   "psource": "psource-979b5e8923453af5b326",
+   "cif": "structures/psource-979b5e8923453af5b326/structure.cif"
+  },
+  "ptask-09f0695dac6360146b30": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-09fcd192b35039a8883c": {
+   "psource": "psource-64c5450baedd18fda0e5",
+   "cif": "structures/psource-64c5450baedd18fda0e5/structure.cif"
+  },
+  "ptask-0a4a105ccc272cbde764": {
+   "psource": "psource-ecfaa70916507bf799f5",
+   "cif": "structures/psource-ecfaa70916507bf799f5/structure.cif"
+  },
+  "ptask-0ab1924dff5d3078656e": {
+   "psource": "psource-c254b2eeb950c2553cd0",
+   "cif": "structures/psource-c254b2eeb950c2553cd0/structure.cif"
+  },
+  "ptask-0c2864c8f05cd8d1669d": {
+   "psource": "psource-733d98270047fa8695e6",
+   "cif": "structures/psource-733d98270047fa8695e6/structure.cif"
+  },
+  "ptask-0ce4ce9e0ba03530f277": {
+   "psource": "psource-ed79d633e2c4946003df",
+   "cif": "structures/psource-ed79d633e2c4946003df/structure.cif"
+  },
+  "ptask-0d270413963ae0452a74": {
+   "psource": "psource-9e94423bd6b8201e9417",
+   "cif": "structures/psource-9e94423bd6b8201e9417/structure.cif"
+  },
+  "ptask-0d27158494703456f26b": {
+   "psource": "psource-35732036fa8f396a77a0",
+   "cif": "structures/psource-35732036fa8f396a77a0/structure.cif"
+  },
+  "ptask-0d40e6bf0227c26211e5": {
+   "psource": "psource-4a28f8a6705ade2eb767",
+   "cif": "structures/psource-4a28f8a6705ade2eb767/structure.cif"
+  },
+  "ptask-0d4d089c927408cd0b6c": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-0e2dcf626873ef1b8af0": {
+   "psource": "psource-14624cd74f198da0a2ad",
+   "cif": "structures/psource-14624cd74f198da0a2ad/structure.cif"
+  },
+  "ptask-0ed96aa051d7bdb35c9b": {
+   "psource": "psource-b3851cea167d483eca22",
+   "cif": "structures/psource-b3851cea167d483eca22/structure.cif"
+  },
+  "ptask-0f45701a0acbae21a292": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-0f722a73dd738905e2dc": {
+   "psource": "psource-14624cd74f198da0a2ad",
+   "cif": "structures/psource-14624cd74f198da0a2ad/structure.cif"
+  },
+  "ptask-0fbd0f29478ac0666edf": {
+   "psource": "psource-b5216e9937efce754385",
+   "cif": "structures/psource-b5216e9937efce754385/structure.cif"
+  },
+  "ptask-110403358439cfa21953": {
+   "psource": "psource-24fc26413b1e9b37bbae",
+   "cif": "structures/psource-24fc26413b1e9b37bbae/structure.cif"
+  },
+  "ptask-118cd5e8c855e640d5d3": {
+   "psource": "psource-051eebae8e676f9d0745",
+   "cif": "structures/psource-051eebae8e676f9d0745/structure.cif"
+  },
+  "ptask-131ab2faee248653a262": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-13de952867345a2649f3": {
+   "psource": "psource-c87509c3d740a324606c",
+   "cif": "structures/psource-c87509c3d740a324606c/structure.cif"
+  },
+  "ptask-13f1c11ccfaf8796040e": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-15c51ae3cd7b9181f842": {
+   "psource": "psource-81f22ace0881c9676308",
+   "cif": "structures/psource-81f22ace0881c9676308/structure.cif"
+  },
+  "ptask-165a80ad508ee0315815": {
+   "psource": "psource-e9aa082083672daad25f",
+   "cif": "structures/psource-e9aa082083672daad25f/structure.cif"
+  },
+  "ptask-1705cdfbe656b8033581": {
+   "psource": "psource-4d83938739ef7f375884",
+   "cif": "structures/psource-4d83938739ef7f375884/structure.cif"
+  },
+  "ptask-1746cdf16feda13c20a6": {
+   "psource": "psource-a50ec068124785a614de",
+   "cif": "structures/psource-a50ec068124785a614de/structure.cif"
+  },
+  "ptask-177366c958091a28ed62": {
+   "psource": "psource-a78f5878321653cb9d35",
+   "cif": "structures/psource-a78f5878321653cb9d35/structure.cif"
+  },
+  "ptask-1bad1ec1d6372117b195": {
+   "psource": "psource-41da953ee6a65a86d6e6",
+   "cif": "structures/psource-41da953ee6a65a86d6e6/structure.cif"
+  },
+  "ptask-1c003f3982e9207342d8": {
+   "psource": "psource-5cea79761059d1591d27",
+   "cif": "structures/psource-5cea79761059d1591d27/structure.cif"
+  },
+  "ptask-1c05834dde88874dd67d": {
+   "psource": "psource-c3363c394d4bae897b6b",
+   "cif": "structures/psource-c3363c394d4bae897b6b/structure.cif"
+  },
+  "ptask-1c11ae980dba27dd3a12": {
+   "psource": "psource-478bed898f84410537fc",
+   "cif": "structures/psource-478bed898f84410537fc/structure.cif"
+  },
+  "ptask-1c4dce4f5f01883ea183": {
+   "psource": "psource-742c32999c94ed7ada8a",
+   "cif": "structures/psource-742c32999c94ed7ada8a/structure.cif"
+  },
+  "ptask-1c5e529fd8b8cde5c027": {
+   "psource": "psource-4d83938739ef7f375884",
+   "cif": "structures/psource-4d83938739ef7f375884/structure.cif"
+  },
+  "ptask-1dd2ec8c181106ae10e2": {
+   "psource": "psource-07e3910331ab1568a7e4",
+   "cif": "structures/psource-07e3910331ab1568a7e4/structure.cif"
+  },
+  "ptask-1f224fbd791eb97d6a32": {
+   "psource": "psource-c720d69de9c5e871e5f0",
+   "cif": "structures/psource-c720d69de9c5e871e5f0/structure.cif"
+  },
+  "ptask-204a67a16e71a412d4cc": {
+   "psource": "psource-12c4ca3f36d9fab50084",
+   "cif": "structures/psource-12c4ca3f36d9fab50084/structure.cif"
+  },
+  "ptask-204c562b8beb2b65a299": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-227ac56e7dd73bcf4897": {
+   "psource": "psource-a78f5878321653cb9d35",
+   "cif": "structures/psource-a78f5878321653cb9d35/structure.cif"
+  },
+  "ptask-22e771771a7be0c8d64b": {
+   "psource": "psource-563e51a1caedb3253b04",
+   "cif": "structures/psource-563e51a1caedb3253b04/structure.cif"
+  },
+  "ptask-2313153a93c5328abb4d": {
+   "psource": "psource-6f247897e4db5da55942",
+   "cif": "structures/psource-6f247897e4db5da55942/structure.cif"
+  },
+  "ptask-234719887a632ce2284a": {
+   "psource": "psource-62d83bf09248909d7d8a",
+   "cif": "structures/psource-62d83bf09248909d7d8a/structure.cif"
+  },
+  "ptask-236ca84359a1ef48ae04": {
+   "psource": "psource-1db5e866f1ee7ca3bb8e",
+   "cif": "structures/psource-1db5e866f1ee7ca3bb8e/structure.cif"
+  },
+  "ptask-246aaea9d0eb92a6bc19": {
+   "psource": "psource-b2042a9bfa7ea740493d",
+   "cif": "structures/psource-b2042a9bfa7ea740493d/structure.cif"
+  },
+  "ptask-256831485632495ccfe9": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-25b90903c13b05952b77": {
+   "psource": "psource-610d2bfefcee6268d594",
+   "cif": "structures/psource-610d2bfefcee6268d594/structure.cif"
+  },
+  "ptask-25cc95d08976d191a2bc": {
+   "psource": "psource-88c8e9a2dc3e9d1430af",
+   "cif": "structures/psource-88c8e9a2dc3e9d1430af/structure.cif"
+  },
+  "ptask-25ff02ad8447a34f4269": {
+   "psource": "psource-c9e921485c73f78a5edf",
+   "cif": "structures/psource-c9e921485c73f78a5edf/structure.cif"
+  },
+  "ptask-275f219f05fc01569806": {
+   "psource": "psource-41da953ee6a65a86d6e6",
+   "cif": "structures/psource-41da953ee6a65a86d6e6/structure.cif"
+  },
+  "ptask-276dcea2acf2e3c5a15c": {
+   "psource": "psource-51c0934e8c96a37446d6",
+   "cif": "structures/psource-51c0934e8c96a37446d6/structure.cif"
+  },
+  "ptask-2773f15d4267e7c14799": {
+   "psource": "psource-feba4bada85461244cd0",
+   "cif": "structures/psource-feba4bada85461244cd0/structure.cif"
+  },
+  "ptask-2a0d920367bb2085a2cc": {
+   "psource": "psource-409d61350ef805c07548",
+   "cif": "structures/psource-409d61350ef805c07548/structure.cif"
+  },
+  "ptask-2a87a8666a9fd4727efd": {
+   "psource": "psource-56589e93f3f5ae290936",
+   "cif": "structures/psource-56589e93f3f5ae290936/structure.cif"
+  },
+  "ptask-2b0265d3091ca671ed25": {
+   "psource": "psource-644b1639cb4b6b820f07",
+   "cif": "structures/psource-644b1639cb4b6b820f07/structure.cif"
+  },
+  "ptask-2b1b2d3590ce4804ae2f": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-2b1daa4aabc90d2671fc": {
+   "psource": "psource-5425aaa17e218f427d15",
+   "cif": "structures/psource-5425aaa17e218f427d15/structure.cif"
+  },
+  "ptask-2b92c77b7c165107e74a": {
+   "psource": "psource-398501eb6d734912baff",
+   "cif": "structures/psource-398501eb6d734912baff/structure.cif"
+  },
+  "ptask-2d0eef4bbd83e9c18ba7": {
+   "psource": "psource-5cea79761059d1591d27",
+   "cif": "structures/psource-5cea79761059d1591d27/structure.cif"
+  },
+  "ptask-2d42f0408019cc0b4fe5": {
+   "psource": "psource-5b66e7183ce8efbe01e5",
+   "cif": "structures/psource-5b66e7183ce8efbe01e5/structure.cif"
+  },
+  "ptask-2d75d128a45d9f5bb34e": {
+   "psource": "psource-60bdbef3581c7ce1deb9",
+   "cif": "structures/psource-60bdbef3581c7ce1deb9/structure.cif"
+  },
+  "ptask-2e940db26b83749abf73": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-2eefb78e3b5aff136573": {
+   "psource": "psource-35732036fa8f396a77a0",
+   "cif": "structures/psource-35732036fa8f396a77a0/structure.cif"
+  },
+  "ptask-2fea0e943a2761a3e167": {
+   "psource": "psource-979b5e8923453af5b326",
+   "cif": "structures/psource-979b5e8923453af5b326/structure.cif"
+  },
+  "ptask-30478789490562bb2966": {
+   "psource": "psource-1b773f291587f9910e8a",
+   "cif": "structures/psource-1b773f291587f9910e8a/structure.cif"
+  },
+  "ptask-30c553ed13d3441a1b5a": {
+   "psource": "psource-b2042a9bfa7ea740493d",
+   "cif": "structures/psource-b2042a9bfa7ea740493d/structure.cif"
+  },
+  "ptask-30de1221d4e4e5f26f72": {
+   "psource": "psource-e5fcde44f7f4c07c9317",
+   "cif": "structures/psource-e5fcde44f7f4c07c9317/structure.cif"
+  },
+  "ptask-32d360907d774332ae12": {
+   "psource": "psource-cbd4234dbe0b976f4dc5",
+   "cif": "structures/psource-cbd4234dbe0b976f4dc5/structure.cif"
+  },
+  "ptask-331f8292a89e389440aa": {
+   "psource": "psource-0fa99db5191c7cd9b30a",
+   "cif": "structures/psource-0fa99db5191c7cd9b30a/structure.cif"
+  },
+  "ptask-340d4ba0f5a9352861d1": {
+   "psource": "psource-9f06584bd5fbfac1e495",
+   "cif": "structures/psource-9f06584bd5fbfac1e495/structure.cif"
+  },
+  "ptask-35893738a8bbd5b64c21": {
+   "psource": "psource-ecfaa70916507bf799f5",
+   "cif": "structures/psource-ecfaa70916507bf799f5/structure.cif"
+  },
+  "ptask-38533db5fd30abe4dfc7": {
+   "psource": "psource-46f261f7622abe935eaf",
+   "cif": "structures/psource-46f261f7622abe935eaf/structure.cif"
+  },
+  "ptask-3882f2a0eedfd1112ecc": {
+   "psource": "psource-0f3d7f1397bbc1a9ae39",
+   "cif": "structures/psource-0f3d7f1397bbc1a9ae39/structure.cif"
+  },
+  "ptask-38e9779a6bf05c944537": {
+   "psource": "psource-22ba2cb41dde6db61990",
+   "cif": "structures/psource-22ba2cb41dde6db61990/structure.cif"
+  },
+  "ptask-3943b22b01f39abfb940": {
+   "psource": "psource-610d2bfefcee6268d594",
+   "cif": "structures/psource-610d2bfefcee6268d594/structure.cif"
+  },
+  "ptask-3953a46ec0475b1a7f73": {
+   "psource": "psource-361752b197d2bb51f443",
+   "cif": "structures/psource-361752b197d2bb51f443/structure.cif"
+  },
+  "ptask-398005fcc23711b0a919": {
+   "psource": "psource-f9028e6ed2eda385fe51",
+   "cif": "structures/psource-f9028e6ed2eda385fe51/structure.cif"
+  },
+  "ptask-3ae4bf8f9fbcc3da338a": {
+   "psource": "psource-1d7f8576c9086ba5bfc9",
+   "cif": "structures/psource-1d7f8576c9086ba5bfc9/structure.cif"
+  },
+  "ptask-3c01eb77aaad683d3160": {
+   "psource": "psource-3c1d45e89061c4809840",
+   "cif": "structures/psource-3c1d45e89061c4809840/structure.cif"
+  },
+  "ptask-3dbb275277191d804862": {
+   "psource": "psource-50e633ed2ce7a0f1023c",
+   "cif": "structures/psource-50e633ed2ce7a0f1023c/structure.cif"
+  },
+  "ptask-3dd6d144f73d665c23df": {
+   "psource": "psource-2d083537bb6ed38a76b0",
+   "cif": "structures/psource-2d083537bb6ed38a76b0/structure.cif"
+  },
+  "ptask-3e8b9b8c89cb998df7b1": {
+   "psource": "psource-a174aba62b7386e7bdb6",
+   "cif": "structures/psource-a174aba62b7386e7bdb6/structure.cif"
+  },
+  "ptask-3ea0cb8332451b3f4509": {
+   "psource": "psource-41da953ee6a65a86d6e6",
+   "cif": "structures/psource-41da953ee6a65a86d6e6/structure.cif"
+  },
+  "ptask-3ee540ac7b35669bcc38": {
+   "psource": "psource-88cae9c604650cbc6d8e",
+   "cif": "structures/psource-88cae9c604650cbc6d8e/structure.cif"
+  },
+  "ptask-40db3f140c3e3527034b": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-410bbcd2a0df2b147043": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-412ef252fc0b89e08399": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-4136eb66e9a5773dea4a": {
+   "psource": "psource-563e51a1caedb3253b04",
+   "cif": "structures/psource-563e51a1caedb3253b04/structure.cif"
+  },
+  "ptask-44401938390b88a6e603": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-45a63d0001735551468b": {
+   "psource": "psource-5b66e7183ce8efbe01e5",
+   "cif": "structures/psource-5b66e7183ce8efbe01e5/structure.cif"
+  },
+  "ptask-4624e115608ff6a3d44c": {
+   "psource": "psource-e086875ee44414e1d0e1",
+   "cif": "structures/psource-e086875ee44414e1d0e1/structure.cif"
+  },
+  "ptask-462992ffd078951a2c97": {
+   "psource": "psource-2ca606f269c5689524b9",
+   "cif": "structures/psource-2ca606f269c5689524b9/structure.cif"
+  },
+  "ptask-477576328c123d8bc42c": {
+   "psource": "psource-b19485d3c4c4e71cbac1",
+   "cif": "structures/psource-b19485d3c4c4e71cbac1/structure.cif"
+  },
+  "ptask-478a3566bbe11d713dc8": {
+   "psource": "psource-9d765ac15eab5ea8c296",
+   "cif": "structures/psource-9d765ac15eab5ea8c296/structure.cif"
+  },
+  "ptask-483bf027352620d755f1": {
+   "psource": "psource-14d8a2c73bc104242089",
+   "cif": "structures/psource-14d8a2c73bc104242089/structure.cif"
+  },
+  "ptask-486b8295d9bd26446b39": {
+   "psource": "psource-f658909fef02772c94eb",
+   "cif": "structures/psource-f658909fef02772c94eb/structure.cif"
+  },
+  "ptask-48d4570f7a8a3a628fe1": {
+   "psource": "psource-644b1639cb4b6b820f07",
+   "cif": "structures/psource-644b1639cb4b6b820f07/structure.cif"
+  },
+  "ptask-4950d2bc03d2935d5f79": {
+   "psource": "psource-b15b91e224e830b347d9",
+   "cif": "structures/psource-b15b91e224e830b347d9/structure.cif"
+  },
+  "ptask-49d868a2a16a7f4d78ae": {
+   "psource": "psource-d2b52a5e18ab52087bc1",
+   "cif": "structures/psource-d2b52a5e18ab52087bc1/structure.cif"
+  },
+  "ptask-4aa1357ad9e7212ef400": {
+   "psource": "psource-7192151a53c3051def3c",
+   "cif": "structures/psource-7192151a53c3051def3c/structure.cif"
+  },
+  "ptask-4c8d9959526de9ded597": {
+   "psource": "psource-290a53370624d05dcaa8",
+   "cif": "structures/psource-290a53370624d05dcaa8/structure.cif"
+  },
+  "ptask-4d6ff07a2795f91b9616": {
+   "psource": "psource-b6c524798c26f6d6d5d8",
+   "cif": "structures/psource-b6c524798c26f6d6d5d8/structure.cif"
+  },
+  "ptask-4e7f867cb42cd779108e": {
+   "psource": "psource-86b4b8aae071e7f075a0",
+   "cif": "structures/psource-86b4b8aae071e7f075a0/structure.cif"
+  },
+  "ptask-50defdce2b7b969afcaa": {
+   "psource": "psource-07e3910331ab1568a7e4",
+   "cif": "structures/psource-07e3910331ab1568a7e4/structure.cif"
+  },
+  "ptask-51f81a0ec4d255786a61": {
+   "psource": "psource-d81cd421347393214448",
+   "cif": "structures/psource-d81cd421347393214448/structure.cif"
+  },
+  "ptask-52533f45fe9b788c110f": {
+   "psource": "psource-9d4edea1e74fdc8eb90f",
+   "cif": "structures/psource-9d4edea1e74fdc8eb90f/structure.cif"
+  },
+  "ptask-527b95289182c0c0530d": {
+   "psource": "psource-cbd4234dbe0b976f4dc5",
+   "cif": "structures/psource-cbd4234dbe0b976f4dc5/structure.cif"
+  },
+  "ptask-5292d77b38c6fc508638": {
+   "psource": "psource-88cae9c604650cbc6d8e",
+   "cif": "structures/psource-88cae9c604650cbc6d8e/structure.cif"
+  },
+  "ptask-52cd87070f05e613e781": {
+   "psource": "psource-56589e93f3f5ae290936",
+   "cif": "structures/psource-56589e93f3f5ae290936/structure.cif"
+  },
+  "ptask-5569eb45a166495ccd87": {
+   "psource": "psource-950b5fd94b0f78593c72",
+   "cif": "structures/psource-950b5fd94b0f78593c72/structure.cif"
+  },
+  "ptask-591157933bde8fe65012": {
+   "psource": "psource-644b1639cb4b6b820f07",
+   "cif": "structures/psource-644b1639cb4b6b820f07/structure.cif"
+  },
+  "ptask-59a20ad96d29c7712e19": {
+   "psource": "psource-644b1639cb4b6b820f07",
+   "cif": "structures/psource-644b1639cb4b6b820f07/structure.cif"
+  },
+  "ptask-5a2f3fe716fc3b1ec150": {
+   "psource": "psource-03d2931dcc27babbf322",
+   "cif": "structures/psource-03d2931dcc27babbf322/structure.cif"
+  },
+  "ptask-5affee499be076a8df7c": {
+   "psource": "psource-24fc26413b1e9b37bbae",
+   "cif": "structures/psource-24fc26413b1e9b37bbae/structure.cif"
+  },
+  "ptask-5bb5df85fe0dd9588375": {
+   "psource": "psource-a5e3ea411c94eca05910",
+   "cif": "structures/psource-a5e3ea411c94eca05910/structure.cif"
+  },
+  "ptask-5d54010fcee700256083": {
+   "psource": "psource-e9aa082083672daad25f",
+   "cif": "structures/psource-e9aa082083672daad25f/structure.cif"
+  },
+  "ptask-5d5b451ffd974618b153": {
+   "psource": "psource-409d61350ef805c07548",
+   "cif": "structures/psource-409d61350ef805c07548/structure.cif"
+  },
+  "ptask-5dc09e09192d6375616c": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-5dcf42f21b2dda61e8b9": {
+   "psource": "psource-a17c1b59e9f781ca9b03",
+   "cif": "structures/psource-a17c1b59e9f781ca9b03/structure.cif"
+  },
+  "ptask-5f44fcf7c2ce0fcbf8ff": {
+   "psource": "psource-f658909fef02772c94eb",
+   "cif": "structures/psource-f658909fef02772c94eb/structure.cif"
+  },
+  "ptask-5f4c97c90f1754564a06": {
+   "psource": "psource-00050c86be1e90606c64",
+   "cif": "structures/psource-00050c86be1e90606c64/structure.cif"
+  },
+  "ptask-5fb209a755896b0c6d60": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-60c9d6689dde83972c1a": {
+   "psource": "psource-b8d28123f5985387cd37",
+   "cif": "structures/psource-b8d28123f5985387cd37/structure.cif"
+  },
+  "ptask-611b65b3f2657d77c16c": {
+   "psource": "psource-cbd4234dbe0b976f4dc5",
+   "cif": "structures/psource-cbd4234dbe0b976f4dc5/structure.cif"
+  },
+  "ptask-616037e44305f78c20b3": {
+   "psource": "psource-14f31371cdc8c8671be9",
+   "cif": "structures/psource-14f31371cdc8c8671be9/structure.cif"
+  },
+  "ptask-62967749b6d76b461dba": {
+   "psource": "psource-b3851cea167d483eca22",
+   "cif": "structures/psource-b3851cea167d483eca22/structure.cif"
+  },
+  "ptask-62b2036bc490fbe1f06f": {
+   "psource": "psource-398501eb6d734912baff",
+   "cif": "structures/psource-398501eb6d734912baff/structure.cif"
+  },
+  "ptask-63d0ad28e1b8a182e1ad": {
+   "psource": "psource-a9f58388a0e9598a1eeb",
+   "cif": "structures/psource-a9f58388a0e9598a1eeb/structure.cif"
+  },
+  "ptask-6527203b9df4fce2840b": {
+   "psource": "psource-17e3e20a6c0e87e5aaa0",
+   "cif": "structures/psource-17e3e20a6c0e87e5aaa0/structure.cif"
+  },
+  "ptask-653702d57885f6615c1d": {
+   "psource": "psource-77b8fee9a1cbe8660172",
+   "cif": "structures/psource-77b8fee9a1cbe8660172/structure.cif"
+  },
+  "ptask-66a7f2aa9a41efecb491": {
+   "psource": "psource-6b2755f50af0044a4330",
+   "cif": "structures/psource-6b2755f50af0044a4330/structure.cif"
+  },
+  "ptask-66cd103b87aec441ec76": {
+   "psource": "psource-a78f5878321653cb9d35",
+   "cif": "structures/psource-a78f5878321653cb9d35/structure.cif"
+  },
+  "ptask-66d21dd48ed7e45152f3": {
+   "psource": "psource-cbd4234dbe0b976f4dc5",
+   "cif": "structures/psource-cbd4234dbe0b976f4dc5/structure.cif"
+  },
+  "ptask-6a31f9ae4d1710ed410a": {
+   "psource": "psource-76ae18eae7540525abdc",
+   "cif": "structures/psource-76ae18eae7540525abdc/structure.cif"
+  },
+  "ptask-6aa0bfd3fe7a48fa23ab": {
+   "psource": "psource-9d765ac15eab5ea8c296",
+   "cif": "structures/psource-9d765ac15eab5ea8c296/structure.cif"
+  },
+  "ptask-6abcd442f348460422af": {
+   "psource": "psource-14ffb6eb40e06c2a998d",
+   "cif": "structures/psource-14ffb6eb40e06c2a998d/structure.cif"
+  },
+  "ptask-6be40834e44f6c4d89ba": {
+   "psource": "psource-e58c84b275c88b68ef1e",
+   "cif": "structures/psource-e58c84b275c88b68ef1e/structure.cif"
+  },
+  "ptask-6c414c51aaa5d83d87e4": {
+   "psource": "psource-a78f5878321653cb9d35",
+   "cif": "structures/psource-a78f5878321653cb9d35/structure.cif"
+  },
+  "ptask-6e04bbfa2a2a0a7c366f": {
+   "psource": "psource-b1207c187b4e8f07b6e1",
+   "cif": "structures/psource-b1207c187b4e8f07b6e1/structure.cif"
+  },
+  "ptask-6e128ee5c94f2fb0ded5": {
+   "psource": "psource-1558d587d712c233cd4a",
+   "cif": "structures/psource-1558d587d712c233cd4a/structure.cif"
+  },
+  "ptask-6e5443db0f0d94864adc": {
+   "psource": "psource-57e869b575fbf0c31041",
+   "cif": "structures/psource-57e869b575fbf0c31041/structure.cif"
+  },
+  "ptask-6ed78d9f0e9d4f26a27c": {
+   "psource": "psource-691aa331f971b0a07e58",
+   "cif": "structures/psource-691aa331f971b0a07e58/structure.cif"
+  },
+  "ptask-6fb5b1b841d4f5c8bd8a": {
+   "psource": "psource-b15b91e224e830b347d9",
+   "cif": "structures/psource-b15b91e224e830b347d9/structure.cif"
+  },
+  "ptask-6fcff0b7c186a43e5f52": {
+   "psource": "psource-398501eb6d734912baff",
+   "cif": "structures/psource-398501eb6d734912baff/structure.cif"
+  },
+  "ptask-6fdd501119145821ec1b": {
+   "psource": "psource-0b02ff29aa9384252eb5",
+   "cif": "structures/psource-0b02ff29aa9384252eb5/structure.cif"
+  },
+  "ptask-7046c11be0d69e1ed992": {
+   "psource": "psource-6ba3fbe5fceb591dfa90",
+   "cif": "structures/psource-6ba3fbe5fceb591dfa90/structure.cif"
+  },
+  "ptask-7054bf1e788e172eebe1": {
+   "psource": "psource-f9028e6ed2eda385fe51",
+   "cif": "structures/psource-f9028e6ed2eda385fe51/structure.cif"
+  },
+  "ptask-70e21be6866df0b7d131": {
+   "psource": "psource-979b5e8923453af5b326",
+   "cif": "structures/psource-979b5e8923453af5b326/structure.cif"
+  },
+  "ptask-70ff7c4b812bb0491c54": {
+   "psource": "psource-a9f58388a0e9598a1eeb",
+   "cif": "structures/psource-a9f58388a0e9598a1eeb/structure.cif"
+  },
+  "ptask-71a1dae3c4a42e0c9b2b": {
+   "psource": "psource-083f03e1d15749548dda",
+   "cif": "structures/psource-083f03e1d15749548dda/structure.cif"
+  },
+  "ptask-7229cd0d5fde6b35af2f": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-755b040b47b208dd7721": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-75b754982c75d33b397a": {
+   "psource": "psource-53f9d1149c1e3d6e472d",
+   "cif": "structures/psource-53f9d1149c1e3d6e472d/structure.cif"
+  },
+  "ptask-761da48e72c5d5b110d6": {
+   "psource": "psource-4d83938739ef7f375884",
+   "cif": "structures/psource-4d83938739ef7f375884/structure.cif"
+  },
+  "ptask-77b9e95c39d8748c515e": {
+   "psource": "psource-1b773f291587f9910e8a",
+   "cif": "structures/psource-1b773f291587f9910e8a/structure.cif"
+  },
+  "ptask-7812833c5a8c863f5863": {
+   "psource": "psource-290a53370624d05dcaa8",
+   "cif": "structures/psource-290a53370624d05dcaa8/structure.cif"
+  },
+  "ptask-7a1ca5e647413051f082": {
+   "psource": "psource-29fa581ddf6edc77cbd6",
+   "cif": "structures/psource-29fa581ddf6edc77cbd6/structure.cif"
+  },
+  "ptask-7a6dcca8e933879ce94e": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-7b2957d3cc210c3e8ba4": {
+   "psource": "psource-51109fd884482e87d44f",
+   "cif": "structures/psource-51109fd884482e87d44f/structure.cif"
+  },
+  "ptask-7cdba9e619b833b72080": {
+   "psource": "psource-644b1639cb4b6b820f07",
+   "cif": "structures/psource-644b1639cb4b6b820f07/structure.cif"
+  },
+  "ptask-7d5e2e6fcb31ea447315": {
+   "psource": "psource-0f3d7f1397bbc1a9ae39",
+   "cif": "structures/psource-0f3d7f1397bbc1a9ae39/structure.cif"
+  },
+  "ptask-7ecb61273da8aa1bca08": {
+   "psource": "psource-d85a3909f84ce5e856cb",
+   "cif": "structures/psource-d85a3909f84ce5e856cb/structure.cif"
+  },
+  "ptask-7ef56d4cd692dd7fca6b": {
+   "psource": "psource-d2b52a5e18ab52087bc1",
+   "cif": "structures/psource-d2b52a5e18ab52087bc1/structure.cif"
+  },
+  "ptask-7fd8b9bcb9f7d378267c": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-7fe5ae9162bf514fe906": {
+   "psource": "psource-d85a3909f84ce5e856cb",
+   "cif": "structures/psource-d85a3909f84ce5e856cb/structure.cif"
+  },
+  "ptask-81222035d8f39fec7361": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-816b06339770c2c90b20": {
+   "psource": "psource-14f31371cdc8c8671be9",
+   "cif": "structures/psource-14f31371cdc8c8671be9/structure.cif"
+  },
+  "ptask-8409a03bcd59f80e1acf": {
+   "psource": "psource-50e633ed2ce7a0f1023c",
+   "cif": "structures/psource-50e633ed2ce7a0f1023c/structure.cif"
+  },
+  "ptask-841bb1672638302bf3ec": {
+   "psource": "psource-9352aefb60fc5aa1b898",
+   "cif": "structures/psource-9352aefb60fc5aa1b898/structure.cif"
+  },
+  "ptask-8596b4a50eb91aaa8160": {
+   "psource": "psource-2fd3ed1676f0b2647529",
+   "cif": "structures/psource-2fd3ed1676f0b2647529/structure.cif"
+  },
+  "ptask-85fe8a25e12027c3060b": {
+   "psource": "psource-e4935f662c09af99cf5a",
+   "cif": "structures/psource-e4935f662c09af99cf5a/structure.cif"
+  },
+  "ptask-8692d4785cd1de3f2bc9": {
+   "psource": "psource-ecfaa70916507bf799f5",
+   "cif": "structures/psource-ecfaa70916507bf799f5/structure.cif"
+  },
+  "ptask-86afb24770c60a54f084": {
+   "psource": "psource-e086875ee44414e1d0e1",
+   "cif": "structures/psource-e086875ee44414e1d0e1/structure.cif"
+  },
+  "ptask-86bb99c9285a141bc7cc": {
+   "psource": "psource-f9028e6ed2eda385fe51",
+   "cif": "structures/psource-f9028e6ed2eda385fe51/structure.cif"
+  },
+  "ptask-8745301718b1b3585a09": {
+   "psource": "psource-c720d69de9c5e871e5f0",
+   "cif": "structures/psource-c720d69de9c5e871e5f0/structure.cif"
+  },
+  "ptask-8a06b594134a08d7bb0b": {
+   "psource": "psource-b1fcb48b22c303725ee3",
+   "cif": "structures/psource-b1fcb48b22c303725ee3/structure.cif"
+  },
+  "ptask-8bb58754b7ae9f67ecf0": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-8cd5023cdffabe7510fa": {
+   "psource": "psource-f39f80213664e77f34b8",
+   "cif": "structures/psource-f39f80213664e77f34b8/structure.cif"
+  },
+  "ptask-8e529eaaa5f80de85f8d": {
+   "psource": "psource-a174aba62b7386e7bdb6",
+   "cif": "structures/psource-a174aba62b7386e7bdb6/structure.cif"
+  },
+  "ptask-8e731102a644d5682685": {
+   "psource": "psource-a9f58388a0e9598a1eeb",
+   "cif": "structures/psource-a9f58388a0e9598a1eeb/structure.cif"
+  },
+  "ptask-8e86a98dfa39fc4ba365": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-8fc8d9e707d9bd3a6660": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-8ff49a1716b089c2ac48": {
+   "psource": "psource-9e94423bd6b8201e9417",
+   "cif": "structures/psource-9e94423bd6b8201e9417/structure.cif"
+  },
+  "ptask-904b08fc7d12a20142da": {
+   "psource": "psource-4d83938739ef7f375884",
+   "cif": "structures/psource-4d83938739ef7f375884/structure.cif"
+  },
+  "ptask-911b30904f59c11b58c4": {
+   "psource": "psource-1eec12e4ff8b7ba85e12",
+   "cif": "structures/psource-1eec12e4ff8b7ba85e12/structure.cif"
+  },
+  "ptask-931644b71b57994d544e": {
+   "psource": "psource-c3363c394d4bae897b6b",
+   "cif": "structures/psource-c3363c394d4bae897b6b/structure.cif"
+  },
+  "ptask-931977f92354e695e7ee": {
+   "psource": "psource-5482b0dfe55c00c2c5bb",
+   "cif": "structures/psource-5482b0dfe55c00c2c5bb/structure.cif"
+  },
+  "ptask-931f2022238cc9f85b42": {
+   "psource": "psource-d85a3909f84ce5e856cb",
+   "cif": "structures/psource-d85a3909f84ce5e856cb/structure.cif"
+  },
+  "ptask-93b3f264fde1ea7f515b": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-93f0ffd482f569334f7c": {
+   "psource": "psource-cbd4234dbe0b976f4dc5",
+   "cif": "structures/psource-cbd4234dbe0b976f4dc5/structure.cif"
+  },
+  "ptask-95f34cfa5b105acc8ed3": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-96bef61de0ee5c512e25": {
+   "psource": "psource-269ad21d1988fb2f124d",
+   "cif": "structures/psource-269ad21d1988fb2f124d/structure.cif"
+  },
+  "ptask-98816ca426cbb9869972": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-9b40955a6eca11ca9e2c": {
+   "psource": "psource-d85a3909f84ce5e856cb",
+   "cif": "structures/psource-d85a3909f84ce5e856cb/structure.cif"
+  },
+  "ptask-9b5c6447784940ad8567": {
+   "psource": "psource-bb07f1bfd9219f43ca64",
+   "cif": "structures/psource-bb07f1bfd9219f43ca64/structure.cif"
+  },
+  "ptask-9c398cf6ca376eea96ba": {
+   "psource": "psource-60bdbef3581c7ce1deb9",
+   "cif": "structures/psource-60bdbef3581c7ce1deb9/structure.cif"
+  },
+  "ptask-9c59f78f4186562d9963": {
+   "psource": "psource-f658909fef02772c94eb",
+   "cif": "structures/psource-f658909fef02772c94eb/structure.cif"
+  },
+  "ptask-9d1df2cada3bb011e8e5": {
+   "psource": "psource-d81cd421347393214448",
+   "cif": "structures/psource-d81cd421347393214448/structure.cif"
+  },
+  "ptask-9e492eebf616e4f9bea8": {
+   "psource": "psource-f9028e6ed2eda385fe51",
+   "cif": "structures/psource-f9028e6ed2eda385fe51/structure.cif"
+  },
+  "ptask-9ed18e0639e372bae5c9": {
+   "psource": "psource-9de5f34f1d67a5ae7f63",
+   "cif": "structures/psource-9de5f34f1d67a5ae7f63/structure.cif"
+  },
+  "ptask-9fed1e3115684eca8800": {
+   "psource": "psource-b5216e9937efce754385",
+   "cif": "structures/psource-b5216e9937efce754385/structure.cif"
+  },
+  "ptask-a0da0ed5423c0fb98d77": {
+   "psource": "psource-07e3910331ab1568a7e4",
+   "cif": "structures/psource-07e3910331ab1568a7e4/structure.cif"
+  },
+  "ptask-a1170548f7d3593214be": {
+   "psource": "psource-00050c86be1e90606c64",
+   "cif": "structures/psource-00050c86be1e90606c64/structure.cif"
+  },
+  "ptask-a140921791e87a8f71cc": {
+   "psource": "psource-398501eb6d734912baff",
+   "cif": "structures/psource-398501eb6d734912baff/structure.cif"
+  },
+  "ptask-a2324f32f42008a19091": {
+   "psource": "psource-644b1639cb4b6b820f07",
+   "cif": "structures/psource-644b1639cb4b6b820f07/structure.cif"
+  },
+  "ptask-a33032228a2c685dcfa3": {
+   "psource": "psource-083f03e1d15749548dda",
+   "cif": "structures/psource-083f03e1d15749548dda/structure.cif"
+  },
+  "ptask-a36cde1eb4c415bba4b5": {
+   "psource": "psource-d2b52a5e18ab52087bc1",
+   "cif": "structures/psource-d2b52a5e18ab52087bc1/structure.cif"
+  },
+  "ptask-a37b1f22a2abe6a0d27c": {
+   "psource": "psource-66a8857872b3d71165f6",
+   "cif": "structures/psource-66a8857872b3d71165f6/structure.cif"
+  },
+  "ptask-a43b4ab36ed9d7a6ee18": {
+   "psource": "psource-ebc349fe77bca68c7469",
+   "cif": "structures/psource-ebc349fe77bca68c7469/structure.cif"
+  },
+  "ptask-a4bd437db9b3a71272ab": {
+   "psource": "psource-cbd4234dbe0b976f4dc5",
+   "cif": "structures/psource-cbd4234dbe0b976f4dc5/structure.cif"
+  },
+  "ptask-a6b5c5174fdb13262309": {
+   "psource": "psource-051eebae8e676f9d0745",
+   "cif": "structures/psource-051eebae8e676f9d0745/structure.cif"
+  },
+  "ptask-a6de97915b0edee35fd4": {
+   "psource": "psource-361752b197d2bb51f443",
+   "cif": "structures/psource-361752b197d2bb51f443/structure.cif"
+  },
+  "ptask-a7d94a7d5cc320910cb1": {
+   "psource": "psource-200819d9f23d48196823",
+   "cif": "structures/psource-200819d9f23d48196823/structure.cif"
+  },
+  "ptask-a80865835144f2fa35bd": {
+   "psource": "psource-14f31371cdc8c8671be9",
+   "cif": "structures/psource-14f31371cdc8c8671be9/structure.cif"
+  },
+  "ptask-a87634dec9f13fe86b43": {
+   "psource": "psource-2b9d81640654c050f7de",
+   "cif": "structures/psource-2b9d81640654c050f7de/structure.cif"
+  },
+  "ptask-a895bef170ae0986fb47": {
+   "psource": "psource-f27ac8ce9c4656719a11",
+   "cif": "structures/psource-f27ac8ce9c4656719a11/structure.cif"
+  },
+  "ptask-a97fe62eda8d21f3772f": {
+   "psource": "psource-478bed898f84410537fc",
+   "cif": "structures/psource-478bed898f84410537fc/structure.cif"
+  },
+  "ptask-a9ac8dcc23c2d3e3d0d8": {
+   "psource": "psource-60bdbef3581c7ce1deb9",
+   "cif": "structures/psource-60bdbef3581c7ce1deb9/structure.cif"
+  },
+  "ptask-a9df3f73023c2973a3e3": {
+   "psource": "psource-051eebae8e676f9d0745",
+   "cif": "structures/psource-051eebae8e676f9d0745/structure.cif"
+  },
+  "ptask-aa25dd2e04f8bb72ae37": {
+   "psource": "psource-4d83938739ef7f375884",
+   "cif": "structures/psource-4d83938739ef7f375884/structure.cif"
+  },
+  "ptask-aa678b204facbf7f9733": {
+   "psource": "psource-9e94423bd6b8201e9417",
+   "cif": "structures/psource-9e94423bd6b8201e9417/structure.cif"
+  },
+  "ptask-aabef7e180541a6d0641": {
+   "psource": "psource-2e519a9165d28c881f6a",
+   "cif": "structures/psource-2e519a9165d28c881f6a/structure.cif"
+  },
+  "ptask-ab93a2c43d958c1c7840": {
+   "psource": "psource-4a28f8a6705ade2eb767",
+   "cif": "structures/psource-4a28f8a6705ade2eb767/structure.cif"
+  },
+  "ptask-abe8b7e96a5250b7d8f2": {
+   "psource": "psource-51109fd884482e87d44f",
+   "cif": "structures/psource-51109fd884482e87d44f/structure.cif"
+  },
+  "ptask-ac108ecaf1933a794a8e": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-ad2aee406f1035960716": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-adfa7924394bfb1b4776": {
+   "psource": "psource-1558d587d712c233cd4a",
+   "cif": "structures/psource-1558d587d712c233cd4a/structure.cif"
+  },
+  "ptask-ae2365e815ae9adede6a": {
+   "psource": "psource-610d2bfefcee6268d594",
+   "cif": "structures/psource-610d2bfefcee6268d594/structure.cif"
+  },
+  "ptask-ae9c89872b9a12229b3f": {
+   "psource": "psource-644b1639cb4b6b820f07",
+   "cif": "structures/psource-644b1639cb4b6b820f07/structure.cif"
+  },
+  "ptask-aeb3a1e12f4d9c8be029": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-b0f600f2f3155fe4ac6a": {
+   "psource": "psource-ecfaa70916507bf799f5",
+   "cif": "structures/psource-ecfaa70916507bf799f5/structure.cif"
+  },
+  "ptask-b1698ec643bd199a9223": {
+   "psource": "psource-2d083537bb6ed38a76b0",
+   "cif": "structures/psource-2d083537bb6ed38a76b0/structure.cif"
+  },
+  "ptask-b4d0456246456c21b353": {
+   "psource": "psource-478bed898f84410537fc",
+   "cif": "structures/psource-478bed898f84410537fc/structure.cif"
+  },
+  "ptask-b52f62a696ceff67bd02": {
+   "psource": "psource-409d61350ef805c07548",
+   "cif": "structures/psource-409d61350ef805c07548/structure.cif"
+  },
+  "ptask-b548c7426ada42c1f0e8": {
+   "psource": "psource-a6718fa59753812ceb49",
+   "cif": "structures/psource-a6718fa59753812ceb49/structure.cif"
+  },
+  "ptask-b5eb112e5393b2afba53": {
+   "psource": "psource-7192151a53c3051def3c",
+   "cif": "structures/psource-7192151a53c3051def3c/structure.cif"
+  },
+  "ptask-b5faac3af0d70a680ee2": {
+   "psource": "psource-b3851cea167d483eca22",
+   "cif": "structures/psource-b3851cea167d483eca22/structure.cif"
+  },
+  "ptask-b7e05dbdb026317ecdfb": {
+   "psource": "psource-60bdbef3581c7ce1deb9",
+   "cif": "structures/psource-60bdbef3581c7ce1deb9/structure.cif"
+  },
+  "ptask-b857a6cbeb7c6a55a0f4": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-b86028976ae8d5e298f1": {
+   "psource": "psource-f27ac8ce9c4656719a11",
+   "cif": "structures/psource-f27ac8ce9c4656719a11/structure.cif"
+  },
+  "ptask-b92319f1d034ab502e02": {
+   "psource": "psource-41027a593f38c4c7964e",
+   "cif": "structures/psource-41027a593f38c4c7964e/structure.cif"
+  },
+  "ptask-ba36e9bbf3c99e35cfb5": {
+   "psource": "psource-e9df12d6ee3421f6a332",
+   "cif": "structures/psource-e9df12d6ee3421f6a332/structure.cif"
+  },
+  "ptask-bb0fe23d480e15910276": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-bb6d2fda6317da2f5ed7": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-bb76b6384a2df1d57178": {
+   "psource": "psource-644b1639cb4b6b820f07",
+   "cif": "structures/psource-644b1639cb4b6b820f07/structure.cif"
+  },
+  "ptask-be51e600f977eca41844": {
+   "psource": "psource-9d765ac15eab5ea8c296",
+   "cif": "structures/psource-9d765ac15eab5ea8c296/structure.cif"
+  },
+  "ptask-c083cbddfcc6ed7eecf8": {
+   "psource": "psource-bc48bd4bbe8de864a7fc",
+   "cif": "structures/psource-bc48bd4bbe8de864a7fc/structure.cif"
+  },
+  "ptask-c0d215f8a0db96fd52a7": {
+   "psource": "psource-c2442e8e7915f1e068c5",
+   "cif": "structures/psource-c2442e8e7915f1e068c5/structure.cif"
+  },
+  "ptask-c173aad228bbfc33aef6": {
+   "psource": "psource-b3851cea167d483eca22",
+   "cif": "structures/psource-b3851cea167d483eca22/structure.cif"
+  },
+  "ptask-c2f05ef532a98753fde0": {
+   "psource": "psource-00050c86be1e90606c64",
+   "cif": "structures/psource-00050c86be1e90606c64/structure.cif"
+  },
+  "ptask-c4a5b945c24d1c2e60e3": {
+   "psource": "psource-644b1639cb4b6b820f07",
+   "cif": "structures/psource-644b1639cb4b6b820f07/structure.cif"
+  },
+  "ptask-c60dcfdaa4a1c8f0efd9": {
+   "psource": "psource-d81cd421347393214448",
+   "cif": "structures/psource-d81cd421347393214448/structure.cif"
+  },
+  "ptask-c65fb18b7d9abf7b4792": {
+   "psource": "psource-88cae9c604650cbc6d8e",
+   "cif": "structures/psource-88cae9c604650cbc6d8e/structure.cif"
+  },
+  "ptask-c67705cf54469d0140d1": {
+   "psource": "psource-9352aefb60fc5aa1b898",
+   "cif": "structures/psource-9352aefb60fc5aa1b898/structure.cif"
+  },
+  "ptask-c70ed5f0d9c8f300fdb8": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-c790b281ad1e0e8b70ae": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-c7962c2e5e25bb1765f0": {
+   "psource": "psource-9f5b8adf86a7460d5237",
+   "cif": "structures/psource-9f5b8adf86a7460d5237/structure.cif"
+  },
+  "ptask-c7efc312a974caf7a81b": {
+   "psource": "psource-b2042a9bfa7ea740493d",
+   "cif": "structures/psource-b2042a9bfa7ea740493d/structure.cif"
+  },
+  "ptask-c841f548ff44879d15c9": {
+   "psource": "psource-7a2dea34eb2d44925f5c",
+   "cif": "structures/psource-7a2dea34eb2d44925f5c/structure.cif"
+  },
+  "ptask-c8dbfe6d19b94a646f2b": {
+   "psource": "psource-a17c1b59e9f781ca9b03",
+   "cif": "structures/psource-a17c1b59e9f781ca9b03/structure.cif"
+  },
+  "ptask-c9411bef55763f601113": {
+   "psource": "psource-699df7e3737cad422329",
+   "cif": "structures/psource-699df7e3737cad422329/structure.cif"
+  },
+  "ptask-cc4ed85f1ca3ab915e08": {
+   "psource": "psource-81788348a8f9c4738d45",
+   "cif": "structures/psource-81788348a8f9c4738d45/structure.cif"
+  },
+  "ptask-cc5e6ae704321da797db": {
+   "psource": "psource-58dca661d19b233b8053",
+   "cif": "structures/psource-58dca661d19b233b8053/structure.cif"
+  },
+  "ptask-cc922caeaf553e79e271": {
+   "psource": "psource-a5e3ea411c94eca05910",
+   "cif": "structures/psource-a5e3ea411c94eca05910/structure.cif"
+  },
+  "ptask-cf846b9cf76323eb7436": {
+   "psource": "psource-88cae9c604650cbc6d8e",
+   "cif": "structures/psource-88cae9c604650cbc6d8e/structure.cif"
+  },
+  "ptask-d234f38e35b633392e47": {
+   "psource": "psource-2e519a9165d28c881f6a",
+   "cif": "structures/psource-2e519a9165d28c881f6a/structure.cif"
+  },
+  "ptask-d290a99a1ff7e4b5a7a2": {
+   "psource": "psource-979b5e8923453af5b326",
+   "cif": "structures/psource-979b5e8923453af5b326/structure.cif"
+  },
+  "ptask-d2cc9331d6e8498a540e": {
+   "psource": "psource-c3363c394d4bae897b6b",
+   "cif": "structures/psource-c3363c394d4bae897b6b/structure.cif"
+  },
+  "ptask-d301e199c6e468d10e55": {
+   "psource": "psource-bce0013ac13e0ff1bb89",
+   "cif": "structures/psource-bce0013ac13e0ff1bb89/structure.cif"
+  },
+  "ptask-d3cc8d20e333e371a303": {
+   "psource": "psource-e5fcde44f7f4c07c9317",
+   "cif": "structures/psource-e5fcde44f7f4c07c9317/structure.cif"
+  },
+  "ptask-d63db20db41f8055134a": {
+   "psource": "psource-81f22ace0881c9676308",
+   "cif": "structures/psource-81f22ace0881c9676308/structure.cif"
+  },
+  "ptask-d6d8398d7a28552c6e63": {
+   "psource": "psource-24fc26413b1e9b37bbae",
+   "cif": "structures/psource-24fc26413b1e9b37bbae/structure.cif"
+  },
+  "ptask-d7562aed4d49e7a79869": {
+   "psource": "psource-3424ed6daf6f30847494",
+   "cif": "structures/psource-3424ed6daf6f30847494/structure.cif"
+  },
+  "ptask-d76fcebfbd3a5beb70e1": {
+   "psource": "psource-d85a3909f84ce5e856cb",
+   "cif": "structures/psource-d85a3909f84ce5e856cb/structure.cif"
+  },
+  "ptask-d944b032e2dccba64a72": {
+   "psource": "psource-ed4533ac27344ee4c62a",
+   "cif": "structures/psource-ed4533ac27344ee4c62a/structure.cif"
+  },
+  "ptask-d946cb333cd2914131ce": {
+   "psource": "psource-41027a593f38c4c7964e",
+   "cif": "structures/psource-41027a593f38c4c7964e/structure.cif"
+  },
+  "ptask-dabb5b829f3fa0c0f8ea": {
+   "psource": "psource-f658909fef02772c94eb",
+   "cif": "structures/psource-f658909fef02772c94eb/structure.cif"
+  },
+  "ptask-daf3d0b8b33a17ea2a1d": {
+   "psource": "psource-ecfaa70916507bf799f5",
+   "cif": "structures/psource-ecfaa70916507bf799f5/structure.cif"
+  },
+  "ptask-dbfb9630b0dd6b70777f": {
+   "psource": "psource-41da953ee6a65a86d6e6",
+   "cif": "structures/psource-41da953ee6a65a86d6e6/structure.cif"
+  },
+  "ptask-dc5cf6aa4af9007fa474": {
+   "psource": "psource-3c1d45e89061c4809840",
+   "cif": "structures/psource-3c1d45e89061c4809840/structure.cif"
+  },
+  "ptask-dc8f673ef9aec1b2d620": {
+   "psource": "psource-c254b2eeb950c2553cd0",
+   "cif": "structures/psource-c254b2eeb950c2553cd0/structure.cif"
+  },
+  "ptask-dd0f951a8777f8dd9757": {
+   "psource": "psource-398501eb6d734912baff",
+   "cif": "structures/psource-398501eb6d734912baff/structure.cif"
+  },
+  "ptask-de06733d9f33c4adc6fb": {
+   "psource": "psource-81f22ace0881c9676308",
+   "cif": "structures/psource-81f22ace0881c9676308/structure.cif"
+  },
+  "ptask-de2a7a49ad36d654428c": {
+   "psource": "psource-60bdbef3581c7ce1deb9",
+   "cif": "structures/psource-60bdbef3581c7ce1deb9/structure.cif"
+  },
+  "ptask-ded559073caa929a75b6": {
+   "psource": "psource-9352aefb60fc5aa1b898",
+   "cif": "structures/psource-9352aefb60fc5aa1b898/structure.cif"
+  },
+  "ptask-e0bca4f69a0cbeb3e780": {
+   "psource": "psource-35732036fa8f396a77a0",
+   "cif": "structures/psource-35732036fa8f396a77a0/structure.cif"
+  },
+  "ptask-e16a2fbf69c01bb1613f": {
+   "psource": "psource-53f9d1149c1e3d6e472d",
+   "cif": "structures/psource-53f9d1149c1e3d6e472d/structure.cif"
+  },
+  "ptask-e3d24e5ef4071862419e": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-e410b83e1dff5b67c2ef": {
+   "psource": "psource-a5e3ea411c94eca05910",
+   "cif": "structures/psource-a5e3ea411c94eca05910/structure.cif"
+  },
+  "ptask-e59208fc02cd0280ace8": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-e6f4e079d8618e0617de": {
+   "psource": "psource-4a28f8a6705ade2eb767",
+   "cif": "structures/psource-4a28f8a6705ade2eb767/structure.cif"
+  },
+  "ptask-e7d7aa50432c350fda4b": {
+   "psource": "psource-5425aaa17e218f427d15",
+   "cif": "structures/psource-5425aaa17e218f427d15/structure.cif"
+  },
+  "ptask-e9ae1d1005b94682a124": {
+   "psource": "psource-9e94423bd6b8201e9417",
+   "cif": "structures/psource-9e94423bd6b8201e9417/structure.cif"
+  },
+  "ptask-ea4fa542de4b72332b43": {
+   "psource": "psource-a174aba62b7386e7bdb6",
+   "cif": "structures/psource-a174aba62b7386e7bdb6/structure.cif"
+  },
+  "ptask-ead234a473042782871e": {
+   "psource": "psource-5481f103401955d3af6d",
+   "cif": "structures/psource-5481f103401955d3af6d/structure.cif"
+  },
+  "ptask-eb96de1aae2b6ffc3c95": {
+   "psource": "psource-2e519a9165d28c881f6a",
+   "cif": "structures/psource-2e519a9165d28c881f6a/structure.cif"
+  },
+  "ptask-ec255f8fbd9dcf82f119": {
+   "psource": "psource-1d7f8576c9086ba5bfc9",
+   "cif": "structures/psource-1d7f8576c9086ba5bfc9/structure.cif"
+  },
+  "ptask-ec71dfce55215747be40": {
+   "psource": "psource-9b452eaf0b8897fb7a99",
+   "cif": "structures/psource-9b452eaf0b8897fb7a99/structure.cif"
+  },
+  "ptask-ecaebbb295437fc2486b": {
+   "psource": "psource-60bdbef3581c7ce1deb9",
+   "cif": "structures/psource-60bdbef3581c7ce1deb9/structure.cif"
+  },
+  "ptask-edd22c98b4342f5cdd10": {
+   "psource": "psource-f2308613d54627724f32",
+   "cif": "structures/psource-f2308613d54627724f32/structure.cif"
+  },
+  "ptask-ee1e0a0c0f4cee48efaa": {
+   "psource": "psource-610d2bfefcee6268d594",
+   "cif": "structures/psource-610d2bfefcee6268d594/structure.cif"
+  },
+  "ptask-ef11129635f49e9fdd07": {
+   "psource": "psource-ed4533ac27344ee4c62a",
+   "cif": "structures/psource-ed4533ac27344ee4c62a/structure.cif"
+  },
+  "ptask-ef3a53a71a69c3094e74": {
+   "psource": "psource-a78f5878321653cb9d35",
+   "cif": "structures/psource-a78f5878321653cb9d35/structure.cif"
+  },
+  "ptask-ef437ae16cb7659440d5": {
+   "psource": "psource-51109fd884482e87d44f",
+   "cif": "structures/psource-51109fd884482e87d44f/structure.cif"
+  },
+  "ptask-efec39829355503cf923": {
+   "psource": "psource-07e3910331ab1568a7e4",
+   "cif": "structures/psource-07e3910331ab1568a7e4/structure.cif"
+  },
+  "ptask-f06e54a5a4e1593ae0a6": {
+   "psource": "psource-644b1639cb4b6b820f07",
+   "cif": "structures/psource-644b1639cb4b6b820f07/structure.cif"
+  },
+  "ptask-f229998cee1687d31830": {
+   "psource": "psource-e9aa082083672daad25f",
+   "cif": "structures/psource-e9aa082083672daad25f/structure.cif"
+  },
+  "ptask-f2d5a5562a18dc1c1995": {
+   "psource": "psource-644b1639cb4b6b820f07",
+   "cif": "structures/psource-644b1639cb4b6b820f07/structure.cif"
+  },
+  "ptask-f2e6091896e90a1952df": {
+   "psource": "psource-d85a3909f84ce5e856cb",
+   "cif": "structures/psource-d85a3909f84ce5e856cb/structure.cif"
+  },
+  "ptask-f315450ff3910fbe728b": {
+   "psource": "psource-a17c1b59e9f781ca9b03",
+   "cif": "structures/psource-a17c1b59e9f781ca9b03/structure.cif"
+  },
+  "ptask-f364619a911b92a5d2ef": {
+   "psource": "psource-bc223ad9432aae3fea61",
+   "cif": "structures/psource-bc223ad9432aae3fea61/structure.cif"
+  },
+  "ptask-f37a76f4ab2afd5e6067": {
+   "psource": "psource-854b044ebd3841665c2c",
+   "cif": "structures/psource-854b044ebd3841665c2c/structure.cif"
+  },
+  "ptask-f48d4d07d02d46f5a441": {
+   "psource": "psource-ce7bcdf3e7bd5bfcd21c",
+   "cif": "structures/psource-ce7bcdf3e7bd5bfcd21c/structure.cif"
+  },
+  "ptask-f4edc270386bc17fc07e": {
+   "psource": "psource-4a28f8a6705ade2eb767",
+   "cif": "structures/psource-4a28f8a6705ade2eb767/structure.cif"
+  },
+  "ptask-f5e25275376076bad467": {
+   "psource": "psource-1eec12e4ff8b7ba85e12",
+   "cif": "structures/psource-1eec12e4ff8b7ba85e12/structure.cif"
+  },
+  "ptask-f61c7ce07e1b05518f45": {
+   "psource": "psource-46f261f7622abe935eaf",
+   "cif": "structures/psource-46f261f7622abe935eaf/structure.cif"
+  },
+  "ptask-f67f890e4923f7d4da4b": {
+   "psource": "psource-290a53370624d05dcaa8",
+   "cif": "structures/psource-290a53370624d05dcaa8/structure.cif"
+  },
+  "ptask-f70cb1bf0e63e4892d93": {
+   "psource": "psource-979b5e8923453af5b326",
+   "cif": "structures/psource-979b5e8923453af5b326/structure.cif"
+  },
+  "ptask-f7ea7fdf65d1cf796577": {
+   "psource": "psource-a78f5878321653cb9d35",
+   "cif": "structures/psource-a78f5878321653cb9d35/structure.cif"
+  },
+  "ptask-f7f4868dd04d1fd356e9": {
+   "psource": "psource-9352aefb60fc5aa1b898",
+   "cif": "structures/psource-9352aefb60fc5aa1b898/structure.cif"
+  },
+  "ptask-f8df85d830f5058ee418": {
+   "psource": "psource-07e3910331ab1568a7e4",
+   "cif": "structures/psource-07e3910331ab1568a7e4/structure.cif"
+  },
+  "ptask-fadca577e97369465789": {
+   "psource": "psource-14f31371cdc8c8671be9",
+   "cif": "structures/psource-14f31371cdc8c8671be9/structure.cif"
+  },
+  "ptask-fb88411730b7e86fce1d": {
+   "psource": "psource-35732036fa8f396a77a0",
+   "cif": "structures/psource-35732036fa8f396a77a0/structure.cif"
+  },
+  "ptask-fd03e0c730d039483e6b": {
+   "psource": "psource-9d4edea1e74fdc8eb90f",
+   "cif": "structures/psource-9d4edea1e74fdc8eb90f/structure.cif"
+  },
+  "ptask-fd1ca3fc9b2b772b2151": {
+   "psource": "psource-cbd4234dbe0b976f4dc5",
+   "cif": "structures/psource-cbd4234dbe0b976f4dc5/structure.cif"
+  },
+  "ptask-fe0ebfded804b0bb4c44": {
+   "psource": "psource-03d2931dcc27babbf322",
+   "cif": "structures/psource-03d2931dcc27babbf322/structure.cif"
+  },
+  "ptask-fe2be976f2cd0cefad89": {
+   "psource": "psource-86b4b8aae071e7f075a0",
+   "cif": "structures/psource-86b4b8aae071e7f075a0/structure.cif"
+  },
+  "ptask-fec4b0df751f6dbab16c": {
+   "psource": "psource-699df7e3737cad422329",
+   "cif": "structures/psource-699df7e3737cad422329/structure.cif"
+  },
+  "ptask-ff7135242c291b444f0c": {
+   "psource": "psource-cbd4234dbe0b976f4dc5",
+   "cif": "structures/psource-cbd4234dbe0b976f4dc5/structure.cif"
+  },
+  "ptask-repl-29176d2164e34ed7c956": {
+   "psource": "psource-9e94423bd6b8201e9417",
+   "cif": "structures/psource-9e94423bd6b8201e9417/structure.cif"
+  },
+  "ptask-repl-3fed1db328ec82e646a8": {
+   "psource": "psource-a17c1b59e9f781ca9b03",
+   "cif": "structures/psource-a17c1b59e9f781ca9b03/structure.cif"
+  },
+  "ptask-repl-41542e4818558087a217": {
+   "psource": "psource-12c4ca3f36d9fab50084",
+   "cif": "structures/psource-12c4ca3f36d9fab50084/structure.cif"
+  },
+  "ptask-repl-61a0e8cf9719fcab0a9f": {
+   "psource": "psource-b6c524798c26f6d6d5d8",
+   "cif": "structures/psource-b6c524798c26f6d6d5d8/structure.cif"
+  },
+  "ptask-repl-7a2fb2771280607d8907": {
+   "psource": "psource-051eebae8e676f9d0745",
+   "cif": "structures/psource-051eebae8e676f9d0745/structure.cif"
+  },
+  "ptask-repl-aaad6c5bc8613cbe9e91": {
+   "psource": "psource-d2b52a5e18ab52087bc1",
+   "cif": "structures/psource-d2b52a5e18ab52087bc1/structure.cif"
+  },
+  "ptask-repl-ad9a78012bdfbae197f8": {
+   "psource": "psource-9c888de3882923714d2e",
+   "cif": "structures/psource-9c888de3882923714d2e/structure.cif"
+  },
+  "ptask-repl-b6c080113ce8a0a76c4d": {
+   "psource": "psource-e086875ee44414e1d0e1",
+   "cif": "structures/psource-e086875ee44414e1d0e1/structure.cif"
+  },
+  "ptask-repl-b859475e262d730bda26": {
+   "psource": "psource-88c8e9a2dc3e9d1430af",
+   "cif": "structures/psource-88c8e9a2dc3e9d1430af/structure.cif"
+  },
+  "ptask-repl-cde55ced486c9f2b718f": {
+   "psource": "psource-a17c1b59e9f781ca9b03",
+   "cif": "structures/psource-a17c1b59e9f781ca9b03/structure.cif"
+  },
+  "ptask-repl-f4fd6e7312de4f268de1": {
+   "psource": "psource-409d61350ef805c07548",
+   "cif": "structures/psource-409d61350ef805c07548/structure.cif"
+  }
+ }
+}

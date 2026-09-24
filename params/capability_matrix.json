@@ -1,0 +1,132 @@
+{
+ "schema_version": "protedit-backend-capability-v1",
+ "catalog_id": "protedit_backend_capability_catalog_matrix_18x350_20260919",
+ "note": "matrix-local catalog: v2 catalog + rfd3 entry cloned from the rfdiffusion lane (RFdiffusion3, foundry b02eed6a). Capability matrix inherited as decided on 2026-09-19.",
+ "backends": {
+  "boltzgen": {
+   "primitives": [
+    "design",
+    "residue_constraints",
+    "bond"
+   ],
+   "actions": {
+    "alpha_rich": "partial",
+    "beta_rich": "partial",
+    "move_closer": "partial",
+    "move_away": "partial",
+    "reference_fragment_mimic": "partial",
+    "shape_control": "partial",
+    "head_to_tail_cyclization": "native"
+   }
+  },
+  "odesign": {
+   "primitives": [
+    "partial_diff",
+    "hotspot",
+    "if_cyc"
+   ],
+   "actions": {
+    "alpha_rich": "partial",
+    "beta_rich": "partial",
+    "move_closer": "native",
+    "move_away": "native",
+    "reference_fragment_mimic": "partial",
+    "shape_control": "partial",
+    "head_to_tail_cyclization": "unsupported"
+   }
+  },
+  "rfdiffusion": {
+   "primitives": [
+    "contig_inpainting",
+    "motif_fixed",
+    "partial_diffusion"
+   ],
+   "actions": {
+    "alpha_rich": "partial",
+    "beta_rich": "partial",
+    "move_closer": "unsupported",
+    "move_away": "unsupported",
+    "reference_fragment_mimic": "partial",
+    "shape_control": "partial",
+    "head_to_tail_cyclization": "unsupported"
+   }
+  },
+  "rfd3": {
+   "primitives": [
+    "contig_inpainting",
+    "motif_fixed",
+    "all_atom_codesign"
+   ],
+   "actions": {
+    "alpha_rich": "partial",
+    "beta_rich": "partial",
+    "move_closer": "unsupported",
+    "move_away": "unsupported",
+    "reference_fragment_mimic": "partial",
+    "shape_control": "partial",
+    "head_to_tail_cyclization": "unsupported"
+   }
+  }
+ },
+ "required_primitives_by_action": {
+  "alpha_rich": [
+   "design"
+  ],
+  "beta_rich": [
+   "design"
+  ],
+  "move_closer": [
+   "hotspot"
+  ],
+  "move_away": [
+   "hotspot"
+  ],
+  "reference_fragment_mimic": [
+   "partial_diff"
+  ],
+  "shape_control": [
+   "design"
+  ],
+  "head_to_tail_cyclization": [
+   "bond"
+  ]
+ },
+ "support_reasons": {
+  "boltzgen": {
+   "alpha_rich": "design_conditioning",
+   "beta_rich": "design_conditioning",
+   "head_to_tail_cyclization": "explicit_bond_support",
+   "move_closer": "residue_constraints_or_design_conditioning",
+   "move_away": "residue_constraints_or_design_conditioning",
+   "reference_fragment_mimic": "reference_conditioning_or_design",
+   "shape_control": "design_conditioning"
+  },
+  "odesign": {
+   "alpha_rich": "partial_diff_or_hotspot_conditioning",
+   "beta_rich": "partial_diff_or_hotspot_conditioning",
+   "move_closer": "hotspot_conditioning",
+   "move_away": "hotspot_conditioning",
+   "reference_fragment_mimic": "partial_diff_conditioning",
+   "shape_control": "partial_diff_or_hotspot_conditioning",
+   "head_to_tail_cyclization": "no_explicit_bond_primitive"
+  },
+  "rfdiffusion": {
+   "alpha_rich": "contig_core_redesign_no_ss_conditioning",
+   "beta_rich": "contig_core_redesign_no_ss_conditioning",
+   "move_closer": "motif_fixed_cannot_translate_region",
+   "move_away": "motif_fixed_cannot_translate_region",
+   "reference_fragment_mimic": "motif_scaffolding_holds_reference_fixed_regenerates_core",
+   "shape_control": "contig_core_redesign_no_shape_conditioning",
+   "head_to_tail_cyclization": "no_explicit_bond_primitive"
+  },
+  "rfd3": {
+   "alpha_rich": "contig_core_redesign_no_ss_conditioning",
+   "beta_rich": "contig_core_redesign_no_ss_conditioning",
+   "move_closer": "motif_fixed_cannot_translate_region",
+   "move_away": "motif_fixed_cannot_translate_region",
+   "reference_fragment_mimic": "motif_scaffolding_holds_reference_fixed_regenerates_core",
+   "shape_control": "contig_core_redesign_no_shape_conditioning",
+   "head_to_tail_cyclization": "no_explicit_bond_primitive"
+  }
+ }
+}

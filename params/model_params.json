@@ -1,0 +1,86 @@
+{
+ "tiers": {
+  "t1": {
+   "temperature": 0.2,
+   "system_prompt": "system_t1_t2_open.txt"
+  },
+  "t2": {
+   "temperature": 0.7,
+   "system_prompt": "system_t1_t2_open.txt"
+  },
+  "tc(optional)": {
+   "temperature": 0.7,
+   "system_prompt": "system_tc_orig.txt"
+  }
+ },
+ "payload_rules": [
+  "no stream/top_p/stop",
+  "temperature omitted when supports_temperature=false",
+  "no reasoning-effort parameter; strip reasoning_content from response",
+  "retry 429/5xx/transport with min(120,5*2^a) backoff, max 5 attempts"
+ ],
+ "models": {
+  "gpt-5.6-terra": {
+   "model_id": "gpt-5.6-terra",
+   "api_url": "https://api.boyuerichdata.opensphereai.com/v1/chat/completions",
+   "protocol": "openai",
+   "reasoning": false,
+   "max_tokens": 8192,
+   "timeout_seconds": 300,
+   "max_attempts": 5,
+   "key_file_name": ".protedit_llm_key_boyue_gpt5"
+  },
+  "claude-opus-5": {
+   "model_id": "claude-opus-5",
+   "api_url": "https://api.boyuerichdata.opensphereai.com/v1/chat/completions",
+   "protocol": "openai",
+   "reasoning": false,
+   "supports_temperature": false,
+   "max_tokens": 8192,
+   "timeout_seconds": 300,
+   "max_attempts": 5,
+   "key_file_name": ".protedit_llm_key_boyue_gpt5"
+  },
+  "kimi-k3": {
+   "model_id": "kimi-k3",
+   "api_url": "https://api.boyuerichdata.opensphereai.com/v1/chat/completions",
+   "protocol": "openai",
+   "reasoning": true,
+   "supports_temperature": false,
+   "max_tokens": 8192,
+   "timeout_seconds": 300,
+   "max_attempts": 5,
+   "key_file_name": ".protedit_llm_key_boyue_gpt5"
+  },
+  "glm-5.3-flash": {
+   "model_id": "glm-5.3-flash",
+   "api_url": "https://api.boyuerichdata.opensphereai.com/v1/chat/completions",
+   "protocol": "openai",
+   "reasoning": true,
+   "max_tokens": 8192,
+   "timeout_seconds": 300,
+   "max_attempts": 5,
+   "key_file_name": ".protedit_llm_key_boyue_gpt5"
+  },
+  "deepseek-v4-flash": {
+   "model_id": "bailian/deepseek-v4-flash",
+   "api_url": "https://api.boyuerichdata.opensphereai.com/v1/chat/completions",
+   "protocol": "openai",
+   "reasoning": false,
+   "max_tokens": 8192,
+   "timeout_seconds": 300,
+   "max_attempts": 5,
+   "key_file_name": ".protedit_llm_key_boyue"
+  },
+  "gemini-3.5-flash": {
+   "model_id": "gemini-3.5-flash",
+   "api_url": "https://api.boyuerichdata.opensphereai.com/v1/chat/completions",
+   "protocol": "openai",
+   "reasoning": false,
+   "max_tokens": 8192,
+   "timeout_seconds": 300,
+   "max_attempts": 5,
+   "key_file_name": ".protedit_llm_key_boyue"
+  }
+ }
+}

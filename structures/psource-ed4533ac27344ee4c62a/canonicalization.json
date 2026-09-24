@@ -1,0 +1,22 @@
+{
+  "source_id": "psource-ed4533ac27344ee4c62a",
+  "original_structure": "/datashare/suencheng/protein_edit_dataset/data/derived/benchmark/protedit_v0_5_1_source_reuse_afdb_20260905/release/protedit_v0_5_1_model_safe_20260905/public/sources/psource-ed4533ac27344ee4c62a/structure.pdb",
+  "original_sha256": "a434df24b7f4705f42a8670adfe015d5cc212dc8d13fc95dce676f15e17b27f2",
+  "canonical_structure": "/datashare/suencheng/protein_edit_dataset/data/derived/benchmark/protedit_v0_5_1_source_reuse_afdb_20260905/model_eval/model_safe_canonical_sources_20260906/psource-ed4533ac27344ee4c62a/structure.cif",
+  "canonical_sha256": "113d8effc4dbf7348d1dcf106f85f4ff1e4cf824cf23f71ae19bee74aa6282f4",
+  "canonical_numbering": "one_based_label_and_auth_seq_id",
+  "chain_mapping": {
+    "E": {
+      "canonical_chain_id": "A",
+      "source_chain_id": "A",
+      "row_count": 141
+    },
+    "F": {
+      "canonical_chain_id": "B",
+      "source_chain_id": "B",
+      "row_count": 145
+    }
+  },
+  "retained_chain_count": 2,
+  "retained_residue_count": 286
+}
