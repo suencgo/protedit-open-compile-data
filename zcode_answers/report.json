@@ -1,0 +1,13 @@
+{
+ "ok": 850,
+ "fail": 0,
+ "per_action": {
+  "beta_rich": 150,
+  "move_closer": 100,
+  "reference_fragment_mimic": 150,
+  "alpha_rich": 150,
+  "shape_control": 150,
+  "head_to_tail_cyclization": 50,
+  "move_away": 100
+ }
+}

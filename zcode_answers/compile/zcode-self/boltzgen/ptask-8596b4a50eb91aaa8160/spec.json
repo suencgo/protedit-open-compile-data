@@ -1,0 +1,34 @@
+{
+ "entities": [
+  {
+   "file": {
+    "include": [
+     {
+      "chain": {
+       "id": "A"
+      }
+     },
+     {
+      "chain": {
+       "id": "B"
+      }
+     }
+    ],
+    "design": [
+     {
+      "chain": {
+       "id": "A",
+       "res_index": "148..167"
+      }
+     },
+     {
+      "chain": {
+       "id": "A",
+       "res_index": "208..227"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

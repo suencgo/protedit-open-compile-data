@@ -1,0 +1,103 @@
+{
+ "entities": [
+  {
+   "file": {
+    "include": [
+     {
+      "chain": {
+       "id": "A"
+      }
+     }
+    ],
+    "design": [
+     {
+      "chain": {
+       "id": "A",
+       "res_index": "1..4"
+      }
+     },
+     {
+      "chain": {
+       "id": "A",
+       "res_index": "19..22"
+      }
+     }
+    ],
+    "residue_constraints": [
+     {
+      "position": "5",
+      "allowed": "D"
+     },
+     {
+      "position": "6",
+      "allowed": "P"
+     },
+     {
+      "position": "7",
+      "allowed": "R"
+     },
+     {
+      "position": "8",
+      "allowed": "C"
+     },
+     {
+      "position": "9",
+      "allowed": "N"
+     },
+     {
+      "position": "10",
+      "allowed": "Y"
+     },
+     {
+      "position": "11",
+      "allowed": "D"
+     },
+     {
+      "position": "12",
+      "allowed": "H"
+     },
+     {
+      "position": "13",
+      "allowed": "P"
+     },
+     {
+      "position": "14",
+      "allowed": "E"
+     },
+     {
+      "position": "15",
+      "allowed": "I"
+     },
+     {
+      "position": "16",
+      "allowed": "C"
+     },
+     {
+      "position": "17",
+      "allowed": "G"
+     },
+     {
+      "position": "18",
+      "allowed": "G"
+     }
+    ]
+   }
+  }
+ ],
+ "constraints": [
+  {
+   "bond": {
+    "atom1": [
+     "A",
+     22,
+     "C"
+    ],
+    "atom2": [
+     "A",
+     1,
+     "N"
+    ]
+   }
+  }
+ ]
+}

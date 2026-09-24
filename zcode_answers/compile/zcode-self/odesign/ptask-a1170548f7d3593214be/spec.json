@@ -1,0 +1,16 @@
+{
+ "chains": [
+  {
+   "chain_type": "proteinChain",
+   "sequence": "A/1-156",
+   "if_cyc": false
+  },
+  {
+   "chain_type": "proteinChain",
+   "sequence": "B/1-35,3-3,B/39-129",
+   "if_cyc": false
+  }
+ ],
+ "hotspot": "A/101,A/134,A/132,A/103,A/99",
+ "partial_diff": "B/36-38"
+}
